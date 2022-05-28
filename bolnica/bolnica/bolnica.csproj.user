@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\Allergens.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AllPatients.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Appointments.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\CreateAcc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\DayOff.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Emergency.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Equipment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Guesst.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\LogIn.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Meetings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\NewAppointment.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\NewMeeting.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\NewSurgery.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Surgery.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\SecretaryHomepage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\test.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="BolnicaPocetna.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Allergens.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AllPatients.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Appointments.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\CreateAcc.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\DayOff.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Emergency.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Equipment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Guesst.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\LogIn.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Meetings.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\NewAppointment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\NewMeeting.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\NewSurgery.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Surgery.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\SecretaryHomepage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\test.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
