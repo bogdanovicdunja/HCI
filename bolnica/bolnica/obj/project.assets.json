@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dunja\\Desktop\\bolnica\\bolnica\\bolnica.csproj",
+      "projectUniqueName": "C:\\Users\\dunja\\Desktop\\HCI\\bolnica\\bolnica\\bolnica.csproj",
       "projectName": "bolnica",
-      "projectPath": "C:\\Users\\dunja\\Desktop\\bolnica\\bolnica\\bolnica.csproj",
+      "projectPath": "C:\\Users\\dunja\\Desktop\\HCI\\bolnica\\bolnica\\bolnica.csproj",
       "packagesPath": "C:\\Users\\dunja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dunja\\Desktop\\bolnica\\bolnica\\obj\\",
+      "outputPath": "C:\\Users\\dunja\\Desktop\\HCI\\bolnica\\bolnica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dunja\\AppData\\Roaming\\NuGet\\NuGet.Config",

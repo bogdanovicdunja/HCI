@@ -47,19 +47,19 @@ namespace bolnica.Pages
             }
         }
 
-        public List<Patient> GetPatients()
-        {
-            List<Patient> patients = new List<Patient>();
-            Patient p1 = new Patient("Ana", "Anic", "ana", "Majevicka 5", "ana@gmail.com");
-            Patient p2 = new Patient("Mina", "Minic", "mina", "Hajduk Veljkova 23", "mina@gmail.com");
-            Patient p3 = new Patient("Nikola", "Nikolic", "nikola", "Beogradska 7", "nikola@gmail.com");
+        //public List<Patient> GetPatients()
+        //{
+        //    List<Patient> patients = new List<Patient>();
+        //    Patient p1 = new Patient("Ana", "Anic", "ana", "Majevicka 5", "ana@gmail.com");
+        //    Patient p2 = new Patient("Mina", "Minic", "mina", "Hajduk Veljkova 23", "mina@gmail.com");
+        //    Patient p3 = new Patient("Nikola", "Nikolic", "nikola", "Beogradska 7", "nikola@gmail.com");
 
-            patients.Add(p1);
-            patients.Add(p2);
-            patients.Add(p3);
+        //    patients.Add(p1);
+        //    patients.Add(p2);
+        //    patients.Add(p3);
 
-            return patients;
-        }
+        //    return patients;
+        //}
 
         /*private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
