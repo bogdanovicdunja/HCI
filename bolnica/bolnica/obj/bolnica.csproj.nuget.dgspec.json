@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joldi\\Desktop\\dunjhci\\HCI\\bolnica\\bolnica\\bolnica.csproj": {}
+    "C:\\Users\\dunja\\Desktop\\HCI\\bolnica\\bolnica\\bolnica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joldi\\Desktop\\dunjhci\\HCI\\bolnica\\bolnica\\bolnica.csproj": {
+    "C:\\Users\\dunja\\Desktop\\HCI\\bolnica\\bolnica\\bolnica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joldi\\Desktop\\dunjhci\\HCI\\bolnica\\bolnica\\bolnica.csproj",
+        "projectUniqueName": "C:\\Users\\dunja\\Desktop\\HCI\\bolnica\\bolnica\\bolnica.csproj",
         "projectName": "bolnica",
-        "projectPath": "C:\\Users\\joldi\\Desktop\\dunjhci\\HCI\\bolnica\\bolnica\\bolnica.csproj",
-        "packagesPath": "C:\\Users\\joldi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joldi\\Desktop\\dunjhci\\HCI\\bolnica\\bolnica\\obj\\",
+        "projectPath": "C:\\Users\\dunja\\Desktop\\HCI\\bolnica\\bolnica\\bolnica.csproj",
+        "packagesPath": "C:\\Users\\dunja\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dunja\\Desktop\\HCI\\bolnica\\bolnica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\joldi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dunja\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

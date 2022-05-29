@@ -160,3 +160,5 @@ C:\Users\joldi\Desktop\dunjhci\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\boln
 C:\Users\joldi\Desktop\dunjhci\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\ref\bolnica.dll
 C:\Users\joldi\Desktop\dunjhci\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\UpdateAppointment.g.cs
 C:\Users\joldi\Desktop\dunjhci\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\UpdateAppointment.baml
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\UpdateAppointment.g.cs
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\UpdateAppointment.baml
