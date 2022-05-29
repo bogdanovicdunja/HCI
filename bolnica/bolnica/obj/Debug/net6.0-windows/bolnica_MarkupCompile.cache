@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\dunja\Desktop\bolnica\bolnica\obj\Debug\net6.0-windows\
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\
 bolnica
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\dunja\Desktop\bolnica\bolnica\App.xaml
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\App.xaml
 17-1180535668
 
-23-400352487
+26-1862737140
 2031527207112
 BolnicaPocetna.xaml;Pages\Allergens.xaml;Pages\AllPatients.xaml;Pages\Appointments.xaml;Pages\CreateAcc.xaml;Pages\DayOff.xaml;Pages\Emergency.xaml;Pages\Equipment.xaml;Pages\Guesst.xaml;Pages\LogIn.xaml;Pages\Meetings.xaml;Pages\NewAppointment.xaml;Pages\NewMeeting.xaml;Pages\NewSurgery.xaml;Pages\SecretaryHomepage.xaml;Pages\Surgery.xaml;Pages\test.xaml;
 

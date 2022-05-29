@@ -99,27 +99,58 @@
             </Label.Effect>
         </Label>
 
-        <DatePicker  HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <DatePicker x:Name="DP1" SelectedDateChanged="DP1_SelectedDateChanged" HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" Height="25" Width="196">
             <DatePicker.Effect>
                 <DropShadowEffect/>
             </DatePicker.Effect>
         </DatePicker>
-        <ComboBox HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <ComboBox x:Name="cboTP" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Height="25" Width="196">
+            <ComboBoxItem Content="08:00"/>
+            <ComboBoxItem Content="08:30"/>
+            <ComboBoxItem Content="09:00"/>
+            <ComboBoxItem Content="09:30"/>
+            <ComboBoxItem Content="10:00"/>
+            <ComboBoxItem Content="10:30"/>
+            <ComboBoxItem Content="11:00"/>
+            <ComboBoxItem Content="11:30"/>
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Center" Margin="0,182,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <ComboBox x:Name="Rooms" HorizontalAlignment="Center" Margin="0,182,0,0" VerticalAlignment="Top" Height="25" Width="196">
+            <ComboBoxItem Content="101"/>
+            <ComboBoxItem Content="202"/>
+            <ComboBoxItem Content="303"/>
+            <ComboBoxItem Content="404"/>
+            <ComboBoxItem Content="505"/>
+            <ComboBoxItem Content="607"/>
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Center" Margin="0,219,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <ComboBox x:Name="Patients" HorizontalAlignment="Center" Margin="0,219,0,0" VerticalAlignment="Top" Height="25" Width="196">
+            <ComboBoxItem Content="anja"/>
+            <ComboBoxItem Content="nikolina"/>
+            <ComboBoxItem Content="maksim"/>
+            <ComboBoxItem Content="dusan"/>
+            <ComboBoxItem Content="aleksandar"/>
+            <ComboBoxItem Content="ivana"/>
+            <ComboBoxItem Content="sanja"/>
+            <ComboBoxItem Content="milan"/>
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Center" Margin="0,256,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <ComboBox x:Name="Doctors" HorizontalAlignment="Center" Margin="0,256,0,0" VerticalAlignment="Top" Height="25" Width="196">
+            <ComboBoxItem Content="dunja"/>
+            <ComboBoxItem Content="isidora"/>
+            <ComboBoxItem Content="adriana"/>
+            <ComboBoxItem Content="nikola"/>
+            <ComboBoxItem Content="srdjan"/>
+            <ComboBoxItem Content="dragan"/>
+            <ComboBoxItem Content="svetlana"/>
+            <ComboBoxItem Content="aleksa"/>
+            
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>

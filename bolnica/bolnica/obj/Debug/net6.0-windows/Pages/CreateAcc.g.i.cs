@@ -54,7 +54,7 @@ namespace bolnica.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/bolnica;V1.0.0.0;component/pages/createacc.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/bolnica;component/pages/createacc.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\CreateAcc.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

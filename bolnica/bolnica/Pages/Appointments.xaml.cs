@@ -1,5 +1,7 @@
-﻿using System;
+﻿using bolnica.Model;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +22,21 @@ namespace bolnica.Pages
     /// </summary>
     public partial class Appointments : Page
     {
-        public Appointments()
+
+        public ObservableCollection<Appointment> AppList { get; set; }
+        public Appointments(Appointment appointment)
         {
             InitializeComponent();
+            Appointment a1 = new Appointment(1, DateTime.Now, "nenad", "dunja", "soba 200");
+            AppList = new ObservableCollection<Appointment>();
+            if(appointment != null)
+            {
+                AppList.Add(appointment);
+                GRD.Items.Add(appointment);
+            }
+            AppList.Add(a1);
+            GRD.Items.Add(a1);
+
         }
 
 

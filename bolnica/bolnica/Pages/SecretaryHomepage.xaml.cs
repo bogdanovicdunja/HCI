@@ -1,4 +1,5 @@
-﻿using System;
+﻿using bolnica.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -66,7 +67,8 @@ namespace bolnica.Pages
 
         private void Appointments_Click(object sender, RoutedEventArgs e)
         {
-            Homepage.Content= new Appointments();
+            Appointment appointment = new Appointment(DateTime.Now, "dunja", "aleksa", "404");
+            Homepage.Content= new Appointments(appointment);
         }
 
         private void Surgeries_Click(object sender, RoutedEventArgs e)
