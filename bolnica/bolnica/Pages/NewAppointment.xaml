@@ -118,39 +118,32 @@
             </ComboBox.Effect>
         </ComboBox>
         <ComboBox x:Name="Rooms" HorizontalAlignment="Center" Margin="0,182,0,0" VerticalAlignment="Top" Height="25" Width="196">
-            <ComboBoxItem Content="101"/>
-            <ComboBoxItem Content="202"/>
-            <ComboBoxItem Content="303"/>
-            <ComboBoxItem Content="404"/>
-            <ComboBoxItem Content="505"/>
-            <ComboBoxItem Content="607"/>
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
         <ComboBox x:Name="Patients" HorizontalAlignment="Center" Margin="0,219,0,0" VerticalAlignment="Top" Height="25" Width="196">
-            <ComboBoxItem Content="anja"/>
-            <ComboBoxItem Content="nikolina"/>
-            <ComboBoxItem Content="maksim"/>
-            <ComboBoxItem Content="dusan"/>
-            <ComboBoxItem Content="aleksandar"/>
-            <ComboBoxItem Content="ivana"/>
-            <ComboBoxItem Content="sanja"/>
-            <ComboBoxItem Content="milan"/>
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
         <ComboBox x:Name="Doctors" HorizontalAlignment="Center" Margin="0,256,0,0" VerticalAlignment="Top" Height="25" Width="196">
-            <ComboBoxItem Content="dunja"/>
-            <ComboBoxItem Content="isidora"/>
-            <ComboBoxItem Content="adriana"/>
-            <ComboBoxItem Content="nikola"/>
-            <ComboBoxItem Content="srdjan"/>
-            <ComboBoxItem Content="dragan"/>
-            <ComboBoxItem Content="svetlana"/>
-            <ComboBoxItem Content="aleksa"/>
-            
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>

@@ -1,4 +1,5 @@
 ﻿using bolnica.Model;
+using bolnica.Repository;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -22,20 +23,40 @@ namespace bolnica.Pages
     /// </summary>
     public partial class Appointments : Page
     {
+        private static string _projectPath = System.Reflection.Assembly.GetExecutingAssembly().Location
+          .Split(new string[] { "bin" }, StringSplitOptions.None)[0];
 
+        private string APPOINTMENT_FILE = _projectPath + "\\Resources\\appointments.txt";
+        private const string CSV_DELIMITER = ";";
         public ObservableCollection<Appointment> AppList { get; set; }
-        public Appointments(Appointment appointment)
+
+        private AppointmentRepository _appointmentRepository;
+
+
+        public Appointments()
         {
             InitializeComponent();
-            Appointment a1 = new Appointment(1, DateTime.Now, "nenad", "dunja", "soba 200");
-            AppList = new ObservableCollection<Appointment>();
-            if(appointment != null)
+            GRD.Items.Clear();
+            //Appointment a1 = new Appointment(1, DateTime.Now, "nenad", "dunja", "soba 200");
+            //DataContext = this;
+
+           
+            //if(appointment != null)
+            //{
+            //    AppList.Add(appointment);
+            //    GRD.Items.Add(appointment);
+            //}
+            //AppList.Add(a1);
+            //GRD.Items.Add(a1);
+            _appointmentRepository = new AppointmentRepository(APPOINTMENT_FILE, CSV_DELIMITER);
+            AppList = new ObservableCollection<Appointment>(_appointmentRepository.GetAll().ToList());
+
+            for(int i = 0; i < AppList.Count; i++)
             {
-                AppList.Add(appointment);
-                GRD.Items.Add(appointment);
+                GRD.Items.Add(AppList[i]);
             }
-            AppList.Add(a1);
-            GRD.Items.Add(a1);
+
+
 
         }
 
@@ -47,7 +68,31 @@ namespace bolnica.Pages
 
         private void DeleteAppointment_Click(object sender, RoutedEventArgs e)
         {
+            Appointment ap = GRD.SelectedItem as Appointment;
 
+            if (ap != null)
+            {
+                for (int i = 0; i < AppList.Count(); i++)
+                {
+                    if (AppList[i].Id == ap.Id)
+                    {
+                        GRD.Items.Remove(AppList[i]);
+                    }
+                }
+            }
+
+            //foreach(Appointment item in GRD.SelectedItems)
+            //{
+            //    GRD.Items.Remove(item);
+            //}
+
+
+        }
+
+        private void UpdateAppointment_Click(object sender, RoutedEventArgs e)
+        {
+            Appointment ap = GRD.SelectedItem as Appointment;
+            AppFrame.Navigate(new UpdateAppointment(ap));
         }
 
     }

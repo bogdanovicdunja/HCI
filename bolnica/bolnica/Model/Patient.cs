@@ -41,5 +41,12 @@ namespace bolnica.Model
             Email = email;
             //Allergens = allergens;
         }
+
+        public Patient(uint id, string name, string surname)
+        {
+            Id = id;
+            Name = name;
+            Surname = surname;
+        }
     }
 }

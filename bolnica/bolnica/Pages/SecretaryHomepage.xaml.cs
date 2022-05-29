@@ -67,8 +67,7 @@ namespace bolnica.Pages
 
         private void Appointments_Click(object sender, RoutedEventArgs e)
         {
-            Appointment appointment = new Appointment(DateTime.Now, "dunja", "aleksa", "404");
-            Homepage.Content= new Appointments(appointment);
+            Homepage.Content= new Appointments();
         }
 
         private void Surgeries_Click(object sender, RoutedEventArgs e)
