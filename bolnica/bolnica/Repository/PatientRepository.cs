@@ -155,17 +155,20 @@ namespace bolnica.Repository
             //string Password = tokens[2];
             string Name = tokens[1];
             string Surname = tokens[2];
-            string Username = tokens[3];
+            //DateTime.Parse(tokens[4]);
+            string DateOfBirth = tokens[3];
+            string Username = tokens[5];
             string Adress = tokens[4];
-            string Email = tokens[5];
+            string Email = tokens[6];
             //Enum.TryParse(tokens[7], out Gender gender);
-            // DateTime.Parse(tokens[8]);
+            // 
 
             return new Patient(
                 Id,
                 Name,
                 Surname,
                 //DateTime.Parse(tokens[8]),
+                DateOfBirth,
                 //Adress,
                 //Email,
                 ////gender,
@@ -186,11 +189,12 @@ namespace bolnica.Repository
                 //patient.Password,
                 patient.Name,
                 patient.Surname,
+                patient.DateOfBirth,
                 patient.Username,
                 patient.Adress,
                 patient.Email
                 //patient.Gender,
-                //patient.DateOfBirth
+                
                 );
 
         }

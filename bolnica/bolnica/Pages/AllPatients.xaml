@@ -104,10 +104,11 @@
                                     
                                     <TextBlock Text="Name: " FontWeight="Bold" />
                                     <TextBlock Text="Surname: " FontWeight="Bold"/>
+                                    <TextBlock Text="Date Of Birth: " FontWeight="Bold"/>
                                     <TextBlock Text="Username: " FontWeight="Bold"/>
                                     <TextBlock Text="Email: " FontWeight="Bold"/>
                                     <TextBlock Text="Adress: " FontWeight="Bold"/>
-                            </StackPanel>
+                                </StackPanel>
                             </Border>
 
 
@@ -116,6 +117,7 @@
 
                                 <TextBlock Text="{Binding Name}" />
                                 <TextBlock Text="{Binding Surname}"/>
+                                <TextBlock Text="{Binding DateOfBirth}"/>
                                 <TextBlock Text="{Binding Username}"/>
                                 <TextBlock Text="{Binding Email}"/>
                                 <TextBlock Text="{Binding Adress}"/>

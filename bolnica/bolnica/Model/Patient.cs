@@ -11,6 +11,8 @@ namespace bolnica.Model
         public uint Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
+        //public DateTime DateOfBirth { get; set; }
+        public string DateOfBirth { get; set; }
         public string Username { get; set; }
         public string Adress { get; set; }
         public string Email { get; set; }
@@ -21,32 +23,25 @@ namespace bolnica.Model
 
         }
 
-        public Patient(uint id, string name, string surname, string username, string adress, string email)
+        public Patient(uint id, string name, string surname, string dateOfBirth, string username, string adress, string email)
         {
             Id = id;
             Name = name;
             Surname = surname;
+            DateOfBirth = dateOfBirth;
             Username = username;
             Adress = adress;
             Email = email;
-            //Allergens = allergens;
         }
 
-        public Patient(string name, string surname, string username, string adress, string email)
+        public Patient(string name, string surname, string dateOfBirth, string username, string adress, string email)
         {
             Name = name;
             Surname = surname;
+            DateOfBirth = dateOfBirth;
             Username = username;
             Adress = adress;
             Email = email;
-            //Allergens = allergens;
-        }
-
-        public Patient(uint id, string name, string surname)
-        {
-            Id = id;
-            Name = name;
-            Surname = surname;
         }
     }
 }
