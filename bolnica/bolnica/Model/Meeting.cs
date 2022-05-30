@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace bolnica.Model
 {
-    internal class Meeting
+    public class Meeting
     {
 
         public uint Id { get; set; }
-        public string Date { get; set; }
-        public string Time { get; set; }
-        public string Room { get; set; }
+        public DateTime Date { get; set; }
+        public string RoomName { get; set; }
         public string Topic { get; set; }
 
         public Meeting()
@@ -20,21 +19,20 @@ namespace bolnica.Model
 
         }
 
-        public Meeting(uint id, string date, string time, string room, string topic)
+        public Meeting(uint id, DateTime date, string roomName, string topic)
         {
             Id = id;
             Date = date;
-            Time = time;
-            Room = room;
+            RoomName = roomName;
             Topic = topic;
         }
 
-        public Meeting(string date, string time, string room, string topic)
+        public Meeting(DateTime date, string roomName, string topic)
         {
             Date = date;
-            Time = time;
-            Room = room;
+            RoomName = roomName;
             Topic = topic;
         }
+
     }
 }

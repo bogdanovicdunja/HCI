@@ -7,9 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Meetings">
-    <!--<Page.Effect>
-        <BlurEffect/>
-    </Page.Effect>-->
+  
 
     <Page.Resources>
         <Style x:Key="FocusVisual">
@@ -72,6 +70,7 @@
     <Page.Background>
         <ImageBrush ImageSource="/images/conferenceBlur.jpg"/>
     </Page.Background>
+    
     <Grid>
 
         <Label Content="Scheduled Meetings" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" FontStyle="Italic" Height="50"/>
@@ -81,7 +80,7 @@
             </Button.Effect>
         </Button>
 
-        <ListView x:Name="GRD" ItemsSource="{Binding MeetingList}" Margin="34,101,34,34" >
+        <ListView x:Name="GRD" ItemsSource="{Binding MeetList}" Margin="34,101,34,34" >
         
             <ListView.Background>
                 <ImageBrush ImageSource="/images/conferenceBlur.jpg"/>
@@ -112,7 +111,6 @@
                             <StackPanel Margin="5, 5, 5, 5">
 
                                 <TextBlock Text="Date: " FontWeight="Bold"  />
-                                <TextBlock Text="Time: " FontWeight="Bold" />
                                 <TextBlock Text="Room: " FontWeight="Bold" />
                                 <TextBlock Text="Topic: " FontWeight="Bold" />
                             </StackPanel>
@@ -123,13 +121,18 @@
                             <StackPanel Margin="5, 5, 5, 5">
 
                                 <TextBlock Text="{Binding Date}" />
-                                <TextBlock Text="{Binding Time}" />
-                                <TextBlock Text="{Binding Room}" />
+                                <TextBlock Text="{Binding RoomName}" />
                                 <TextBlock Text="{Binding Topic}" />
                             </StackPanel>
                         </Border>
 
-
+                        <Border Grid.Column="4" >
+                            <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="Update" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Click="UpdateMeeting_Click">
+                                <Button.Effect>
+                                    <DropShadowEffect/>
+                                </Button.Effect>
+                            </Button>
+                        </Border>
 
                         <Border Grid.Column="5" >
                             <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="Delete" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Click="DeleteMeeting_Click">

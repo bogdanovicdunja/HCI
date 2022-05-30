@@ -1,4 +1,5 @@
 ﻿using bolnica.Model;
+using bolnica.Repository;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -23,31 +24,54 @@ namespace bolnica.Pages
     public partial class Meetings : Page
     {
 
-        //public ObservableCollection<Meeting> MeetingList { get; set; }
+        private static string _projectPath = System.Reflection.Assembly.GetExecutingAssembly().Location
+          .Split(new string[] { "bin" }, StringSplitOptions.None)[0];
+
+        private string MEETING_FILE = _projectPath + "\\Resources\\meetings.txt";
+        private const string CSV_DELIMITER = ";";
+        public ObservableCollection<Meeting> MeetList { get; set; }
+
+        private MeetingRepository _meetingRepository;
 
 
         public Meetings()
         {
             InitializeComponent();
+            GRD.Items.Clear();
 
-            Meeting m1 = new Meeting(1, "23/05/2022", "14:30", "202", "Lack of staff");
-            Meeting m2 = new Meeting(2, "05/06/2022", "16:00", "100", "Vacation");
-            Meeting m3 = new Meeting(3, "17/06/2022", "10:00", "404", "Seminars");
-            Meeting m4 = new Meeting(4, "12/07/2022", "17:00", "305", "Duty");
-            Meeting m5 = new Meeting(5, "02/08/2022", "11:15", "202", "Specialization");
+            _meetingRepository = new MeetingRepository(MEETING_FILE, CSV_DELIMITER);
+            MeetList = new ObservableCollection<Meeting>(_meetingRepository.GetAll().ToList());
 
-            GRD.Items.Add(m1);
-            GRD.Items.Add(m2);
-            GRD.Items.Add(m3);
-            GRD.Items.Add(m4);
-            GRD.Items.Add(m5);
+            for(int i=0; i< MeetList.Count; i++)
+            {
+                GRD.Items.Add(MeetList[i]);
+            }
 
         }
 
 
         private void DeleteMeeting_Click(object sender, RoutedEventArgs e)
         {
-            
+            Meeting meet = GRD.SelectedItem as Meeting;
+
+            if (meet != null)
+            {
+                for (int i = 0; i < MeetList.Count(); i++)
+                {
+                    if (MeetList[i].Id == meet.Id)
+                    {
+                        GRD.Items.Remove(MeetList[i]);
+                    }
+                }
+            }
+
+        }
+
+        private void UpdateMeeting_Click(object sender, RoutedEventArgs e)
+        {
+            Meeting m = GRD.SelectedItem as Meeting;
+            MeetingFile.Navigate(new UpdateMeeting(m));
+
         }
 
 

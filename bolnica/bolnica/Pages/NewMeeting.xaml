@@ -93,22 +93,35 @@
             </Label.Effect>
         </Label>
 
-        <DatePicker  HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <DatePicker x:Name="DP1" SelectedDateChanged="DP1_SelectedDateChanged" HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" Height="25" Width="196">
             <DatePicker.Effect>
                 <DropShadowEffect/>
             </DatePicker.Effect>
         </DatePicker>
-        <ComboBox HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <ComboBox x:Name="cboTP" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Height="25" Width="196">
+            <ComboBoxItem Content="08:00"/>
+            <ComboBoxItem Content="08:30"/>
+            <ComboBoxItem Content="09:00"/>
+            <ComboBoxItem Content="09:30"/>
+            <ComboBoxItem Content="10:00"/>
+            <ComboBoxItem Content="10:30"/>
+            <ComboBoxItem Content="11:00"/>
+            <ComboBoxItem Content="11:30"/>
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Center" Margin="0,182,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <ComboBox x:Name="Rooms" HorizontalAlignment="Center" Margin="0,182,0,0" VerticalAlignment="Top" Height="25" Width="196">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <TextBox HorizontalAlignment="Center" Margin="0,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="196">
+        <TextBox x:Name="Topics" HorizontalAlignment="Center" Margin="0,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="25" Width="196">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
