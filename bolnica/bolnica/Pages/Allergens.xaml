@@ -72,14 +72,14 @@
 
     <Grid>
         <Label Content="Patients Allergens" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" FontStyle="Italic" Height="50"/>
-        <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="Add" FontWeight="Bold" Margin="10, 0, 77, 205" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ShowAllergens_Click">
+        <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="Add" FontWeight="Bold" Margin="10, 0, 77, 205" HorizontalAlignment="Right" VerticalAlignment="Center" Click="AddAllergens_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
 
 
-        <ListView x:Name="GRD" ItemsSource="{Binding PatientList}" Margin="34,101,34,34" >
+        <ListView x:Name="GRD" ItemsSource="{Binding AllergenList}" Margin="34,101,34,34" >
 
             <ListView.Background>
                 <ImageBrush ImageSource="/images/bluredHall.jpeg"/>
@@ -132,7 +132,7 @@
 
 
                         <Border Grid.Column="5" >
-                            <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="Delete" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ShowAllergens_Click">
+                            <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="Delete" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Click="DeleteAllergens_Click">
                                 <Button.Effect>
                                     <DropShadowEffect/>
                                 </Button.Effect>

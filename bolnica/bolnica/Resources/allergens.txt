@@ -1,1 +1,5 @@
 ﻿1;pollen
+2;mites
+3;dust
+4;lactosa
+5;ambrosia

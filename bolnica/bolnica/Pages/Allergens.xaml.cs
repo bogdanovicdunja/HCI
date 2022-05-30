@@ -1,4 +1,5 @@
 ﻿using bolnica.Model;
+using bolnica.Repository;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -23,27 +24,54 @@ namespace bolnica.Pages
     public partial class Allergens : Page
     {
 
-        public ObservableCollection<Allergen> PatientAllergens;
+        
+
+        private static string _projectPath = System.Reflection.Assembly.GetExecutingAssembly().Location
+        .Split(new string[] { "bin" }, StringSplitOptions.None)[0];
+
+        private string ALLERGEN_FILE = _projectPath + "\\Resources\\allergens.txt";
+        private const string CSV_DELIMITER = ";";
+       
+        private AllergenRepository _allergenRepository;
+
+        public ObservableCollection<Allergen> AllergenList { get; set; }
+
+
         public Allergens()
         {
             InitializeComponent();
 
-            Allergen a1 = new Allergen(1, "Pollen");
-            Allergen a2 = new Allergen(2, "Mites");
-            Allergen a3 = new Allergen(3, "Dust");
-            Allergen a4 = new Allergen(4, "Ambrosia");
-            Allergen a5 = new Allergen(5, "Lactose");
+            _allergenRepository = new AllergenRepository(ALLERGEN_FILE, CSV_DELIMITER);
+            AllergenList = new ObservableCollection<Allergen>(_allergenRepository.GetAll().ToList());
 
-            GRD.Items.Add(a1);
-            GRD.Items.Add(a2);
-            GRD.Items.Add(a3);
-            GRD.Items.Add(a4);
-            GRD.Items.Add(a5);
+            for (int i = 0; i < AllergenList.Count; i++)
+            {
+                GRD.Items.Add(AllergenList[i]);
+            }
+
+            //READ ALLERGEN-A   ****
         }
+    
 
-        private void ShowAllergens_Click(object sender, RoutedEventArgs e)
+        private void AddAllergens_Click(object sender, RoutedEventArgs e)
         {
             
+        }
+
+        private void DeleteAllergens_Click(object sender, RoutedEventArgs e)
+        {
+            Allergen all = GRD.SelectedItem as Allergen;
+
+            if (all != null)
+            {
+                for (int i = 0; i < AllergenList.Count(); i++)
+                {
+                    if (AllergenList[i].Id == all.Id)
+                    {
+                        GRD.Items.Remove(AllergenList[i]);
+                    }
+                }
+            }
         }
     }
 }
