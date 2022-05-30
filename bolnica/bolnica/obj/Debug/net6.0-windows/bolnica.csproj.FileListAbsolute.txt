@@ -162,3 +162,5 @@ C:\Users\joldi\Desktop\dunjhci\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Page
 C:\Users\joldi\Desktop\dunjhci\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\UpdateAppointment.baml
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\UpdateAppointment.g.cs
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\UpdateAppointment.baml
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\UpdateMeeting.g.cs
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\UpdateMeeting.baml

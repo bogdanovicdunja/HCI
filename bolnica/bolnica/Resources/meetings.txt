@@ -1,4 +1,4 @@
-﻿1;02-May-22 9:00:00 AM;soba 404;Povisice
+1;05-May-22 9:00:00 AM;soba 202;Godisnji odmori
 2;03-May-22 8:00:00 AM;soba 202;povisice
 3;02-May-22 8:30:00 AM;soba 505;seminari
 4;01-May-22 10:30:00 AM;soba 303;specijalizacije

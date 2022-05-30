@@ -58,6 +58,9 @@
     <Compile Update="Pages\UpdateAppointment.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\UpdateMeeting.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="BolnicaPocetna.xaml">
@@ -112,6 +115,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\UpdateAppointment.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\UpdateMeeting.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
