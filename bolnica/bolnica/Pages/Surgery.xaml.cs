@@ -29,7 +29,7 @@ namespace bolnica.Pages
 
         private string SURGERY_FILE = _projectPath + "\\Resources\\surgery.txt";
         private const string CSV_DELIMITER = ";";
-        public ObservableCollection<Surgery> SurList { get; set; }
+        public ObservableCollection<Model.Surgery> SurList { get; set; }
 
         private SurgeryRepository _surgeryRepository;
 
@@ -41,7 +41,7 @@ namespace bolnica.Pages
 
 
             _surgeryRepository = new SurgeryRepository(SURGERY_FILE, CSV_DELIMITER);
-            SurList = new ObservableCollection<Surgery>(_surgeryRepository.GetAll().ToList());
+            SurList = new ObservableCollection<Model.Surgery>(_surgeryRepository.GetAll().ToList());
 
             for (int i = 0; i < SurList.Count; i++)
             {
@@ -57,7 +57,7 @@ namespace bolnica.Pages
 
         private void DeleteSurgery_Click(object sender, RoutedEventArgs e)
         {
-            Surgery sur = GRD.SelectedItem as Surgery;
+            Model.Surgery sur = GRD.SelectedItem as Model.Surgery;
 
             if (sur != null)
             {
@@ -74,7 +74,7 @@ namespace bolnica.Pages
 
         private void UpdateSurgery_Click(object sender, RoutedEventArgs e)
         {
-            Surgery sur = GRD.SelectedItem as Surgery;
+            Model.Surgery sur = GRD.SelectedItem as Model.Surgery;
             SurFrame.Navigate(new UpdateSurgery(sur));
         }
 

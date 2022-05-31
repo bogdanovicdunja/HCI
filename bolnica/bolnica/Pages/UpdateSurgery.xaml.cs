@@ -51,10 +51,10 @@ namespace bolnica.Pages
         public ObservableCollection<Doctor> DoctorsList { get; set; }
         public ObservableCollection<Room> RoomsList { get; set; }
 
-        public Surgery tempSurgery;
+        public Model.Surgery tempSurgery;
 
 
-        public UpdateSurgery(Surgery surgery)
+        public UpdateSurgery(Model.Surgery surgery)
         {
             InitializeComponent();
             DataContext = this;
@@ -106,7 +106,7 @@ namespace bolnica.Pages
             tempSurgery.DoctorName = _doctorName;
             tempSurgery.RoomName = _roomName;
             tempSurgery.Start = _startAppointment;
-            Surgery s = _surgeryRepository.UpdateSurgery(tempSurgery);
+            Model.Surgery s = _surgeryRepository.UpdateSurgery(tempSurgery);
 
 
             NewSur.Content = new Surgery();    //vodi na stranicu sa svim zakazanim operacijama
