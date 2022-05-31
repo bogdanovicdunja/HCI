@@ -90,10 +90,15 @@
                                 <ColumnDefinition Width="100" />
                                 <ColumnDefinition Width="100" />
                                 <ColumnDefinition Width="100" />
+    
+                            </Grid.ColumnDefinitions>
 
-                        </Grid.ColumnDefinitions>
+                            <!--<Grid.RowDefinitions>
+                                <RowDefinition Height="100" />
+                            </Grid.RowDefinitions>-->
 
-                            <Grid >
+
+                        <Grid >
                                 <Grid.Background>
                                     <ImageBrush ImageSource="/images/patient.png"/>
                                 </Grid.Background>

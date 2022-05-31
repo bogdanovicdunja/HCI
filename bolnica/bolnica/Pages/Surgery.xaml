@@ -78,7 +78,7 @@
             </Button.Effect>
         </Button>
 
-        <ListView x:Name="GRD" ItemsSource="{Binding MeetingList}" Margin="34,101,34,34" >
+        <ListView x:Name="GRD" ItemsSource="{Binding SurList}" Margin="34,101,34,34" >
 
             <ListView.Background>
                 <ImageBrush ImageSource="/images/blue_blur.jpg" />
@@ -109,10 +109,10 @@
                             <StackPanel Margin="5, 5, 5, 5">
 
                                 <TextBlock Text="Date: " FontWeight="Bold"  />
-                                <TextBlock Text="Time: " FontWeight="Bold" />
-                                <TextBlock Text="Room: " FontWeight="Bold" />
                                 <TextBlock Text="Patient: " FontWeight="Bold" />
                                 <TextBlock Text="Doctor: " FontWeight="Bold" />
+                                <TextBlock Text="Room: " FontWeight="Bold" />
+
                             </StackPanel>
                         </Border>
 
@@ -120,16 +120,22 @@
                         <Border Grid.Column="2"  Padding="2, 0" BorderThickness="2, 0, 0, 0">
                             <StackPanel Margin="5, 5, 5, 5">
 
-                                <TextBlock Text="{Binding Date}" />
-                                <TextBlock Text="{Binding Time}" />
-                                <TextBlock Text="{Binding Room}" />
-                                <TextBlock Text="{Binding Patient}" />
-                                <TextBlock Text="{Binding Doctor}" />
+                                <TextBlock Text="{Binding Start}" />
+                                <TextBlock Text="{Binding PatientName}" />
+                                <TextBlock Text="{Binding DoctorName}" />
+                                <TextBlock Text="{Binding RoomName}" />
                             </StackPanel>
                         </Border>
 
 
-
+                        <Border Grid.Column="4" >
+                            <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="Update" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Click="UpdateSurgery_Click">
+                                <Button.Effect>
+                                    <DropShadowEffect/>
+                                </Button.Effect>
+                            </Button>
+                        </Border>
+                        
                         <Border Grid.Column="5" >
                             <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="Delete" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Click="DeleteSurgery_Click">
                                 <Button.Effect>
