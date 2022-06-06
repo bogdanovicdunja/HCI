@@ -69,7 +69,7 @@
         </Style>
     </Page.Resources>
 
-    <Grid>
+    <Grid Background="LightCoral" Opacity="0.7"  Width="400" Height="400" Margin="200,10,200,10">
         <Grid.Effect>
             <DropShadowEffect/>
         </Grid.Effect>
@@ -91,22 +91,22 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label Content="Patient:" Foreground="White" HorizontalAlignment="Left" Margin="209,113,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Patient:" Foreground="White" HorizontalAlignment="Left" Margin="30,113,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Specialization:" Foreground="White" HorizontalAlignment="Left" Margin="209,144,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Specialization:" Foreground="White" HorizontalAlignment="Left" Margin="30,144,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Doctor:" Foreground="White" HorizontalAlignment="Left" Margin="209,181,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Doctor:" Foreground="White" HorizontalAlignment="Left" Margin="30,181,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Date:" Foreground="White" HorizontalAlignment="Left" Margin="209,219,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Date:" Foreground="White" HorizontalAlignment="Left" Margin="30,219,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
@@ -126,7 +126,11 @@
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <Button  Style="{DynamicResource RoundenButtonStyle}" Content="Guesst Account" FontWeight="Bold" HorizontalAlignment="Left" Height="30" Width="96" Margin="643,267,0,0" VerticalAlignment="Top" Click="Guesst_Click"/>
+        <Button  Style="{DynamicResource RoundenButtonStyle}" Content="Guesst" FontWeight="Bold" HorizontalAlignment="Center" Height="30" Width="96" Margin="0,310,0,0" VerticalAlignment="Top" Click="Guesst_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
 
         <Frame x:Name="EmergencyCase"  Margin="0, 0, 0, 0"  />
     </Grid>

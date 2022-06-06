@@ -71,40 +71,45 @@
         <ImageBrush ImageSource="/images/doctor.jpg"/>
     </Page.Background>
 
-    <Grid>
-        <Label Content="Schedule Appointment" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" FontStyle="Italic" Height="50"/>
-        <Label Content="Date:" HorizontalAlignment="Left" Margin="200,107,0,0" VerticalAlignment="Top" FontWeight="Bold">
+    <Grid Background="Gray" Opacity="0.8" Height="400" Width="400"  Margin="200,10,200,10" >
+        
+        <Label Content="Schedule Appointment" Opacity="1.0" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Medium" VerticalContentAlignment="Center" FontStyle="Italic" Height="50">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Time:" HorizontalAlignment="Left" Margin="200,144,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Date:" Opacity="1.0" HorizontalAlignment="Left" Margin="30,107,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Room:" HorizontalAlignment="Left" Margin="199,181,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Time:" Opacity="1.0"  HorizontalAlignment="Left" Margin="30,144,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Patient:" HorizontalAlignment="Left" Margin="200,218,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Room:" Opacity="1.0" HorizontalAlignment="Left" Margin="30,181,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Doctor:" HorizontalAlignment="Left" Margin="200,255,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Patient:" Opacity="1.0" HorizontalAlignment="Left" Margin="30,218,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Doctor:" Opacity="1.0" HorizontalAlignment="Left" Margin="30,255,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
 
-        <DatePicker x:Name="DP1" SelectedDateChanged="DP1_SelectedDateChanged" HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <DatePicker x:Name="DP1" SelectedDateChanged="DP1_SelectedDateChanged" Opacity="1.0" HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" Height="25" Width="196">
             <DatePicker.Effect>
                 <DropShadowEffect/>
             </DatePicker.Effect>
         </DatePicker>
-        <ComboBox x:Name="cboTP" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <ComboBox x:Name="cboTP" Opacity="1.0" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Height="25" Width="196">
             <ComboBoxItem Content="08:00"/>
             <ComboBoxItem Content="08:30"/>
             <ComboBoxItem Content="09:00"/>
@@ -117,7 +122,7 @@
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <ComboBox x:Name="Rooms" HorizontalAlignment="Center" Margin="0,182,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <ComboBox x:Name="Rooms" Opacity="1.0" HorizontalAlignment="Center" Margin="0,182,0,0" VerticalAlignment="Top" Height="25" Width="196">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Name}" />
@@ -127,7 +132,7 @@
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <ComboBox x:Name="Patients" HorizontalAlignment="Center" Margin="0,219,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <ComboBox x:Name="Patients" Opacity="1.0" HorizontalAlignment="Center" Margin="0,219,0,0" VerticalAlignment="Top" Height="25" Width="196">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Name}" />
@@ -137,7 +142,7 @@
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <ComboBox x:Name="Doctors" HorizontalAlignment="Center" Margin="0,256,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <ComboBox x:Name="Doctors" Opacity="1.0" HorizontalAlignment="Center" Margin="0,256,0,0" VerticalAlignment="Top" Height="25" Width="196">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Name}" />
@@ -148,7 +153,7 @@
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <Button Style="{DynamicResource RoundenButtonStyle}" Content="Schedule" HorizontalAlignment="Center" Margin="0,293,0,0" VerticalAlignment="Top" Height="30" Width="96" Click="Button_Click" FontWeight="Bold">
+        <Button Style="{DynamicResource RoundenButtonStyle}" Opacity="1.0" Content="Schedule" HorizontalAlignment="Center" Margin="0,293,0,0" VerticalAlignment="Top" Height="30" Width="96" Click="Button_Click" FontWeight="Bold">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>

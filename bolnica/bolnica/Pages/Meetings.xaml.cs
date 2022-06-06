@@ -63,6 +63,7 @@ namespace bolnica.Pages
                         GRD.Items.Remove(MeetList[i]);
                     }
                 }
+                //_meetingRepository.RemoveMeeting(meet.Id);
             }
 
         }

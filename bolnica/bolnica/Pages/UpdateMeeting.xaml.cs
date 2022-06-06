@@ -63,8 +63,33 @@ namespace bolnica.Pages
             RoomsList = new ObservableCollection<Room>(_roomRepository.GetAll().ToList());
             Rooms.ItemsSource = RoomsList;  //Rooms - combobox sa frontenda
 
-
             tempMeeting = meeting;
+
+
+
+
+            this._topic = meeting.Topic;
+            //this._roomName = meeting.RoomName;
+
+        }
+
+        //public String roomname
+        //{
+        //    get => _roomName;
+        //    set
+        //    {
+        //        _roomName = value;
+        //    }
+        //}
+
+
+        public String topic
+        {
+            get => _topic;
+            set
+            {
+                _topic = value;
+            }
         }
 
 

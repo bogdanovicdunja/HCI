@@ -75,7 +75,7 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <TextBox x:Name="PatientName" Opacity="1.0" HorizontalAlignment="Center" Margin="30,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Height="25">
+        <TextBox x:Name="PatientName" Opacity="1.0" HorizontalAlignment="Center" Margin="0,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Height="25">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
@@ -110,32 +110,32 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label Content="Name:" HorizontalAlignment="Left" Margin="15,107,0,0" VerticalAlignment="Top"  FontWeight="Bold">
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="30,107,0,0" VerticalAlignment="Top"  FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Surname:" HorizontalAlignment="Left" Margin="15,144,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Surname:" HorizontalAlignment="Left" Margin="30,144,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Date Of Birth:" HorizontalAlignment="Left" Margin="15,181,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="DOB:" HorizontalAlignment="Left" Margin="30,181,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Adress:" HorizontalAlignment="Left" Margin="15,218,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Adress:" HorizontalAlignment="Left" Margin="30,218,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Email:" HorizontalAlignment="Left" Margin="15,292,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="30,292,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Username:" HorizontalAlignment="Left" Margin="15,255,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="30,255,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>

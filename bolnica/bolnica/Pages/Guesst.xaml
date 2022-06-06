@@ -70,11 +70,11 @@
         </Style>
     </Page.Resources>
 
-    <Grid>
+    <Grid Background="LightCoral" Opacity="0.7"  Width="400" Height="400" Margin="200,10,200,10" >
         <Grid.Effect>
             <DropShadowEffect/>
         </Grid.Effect>
-        <Label Content="Guesst Account" Foreground="White" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" Height="50" FontWeight="Heavy" FontStyle="Italic" FontSize="24" HorizontalContentAlignment="Center">
+        <Label Content="Guesst Account" Opacity="1.0" Foreground="White" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" Height="50" FontWeight="Heavy" FontStyle="Italic" FontSize="24" HorizontalContentAlignment="Center">
             <Label.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -82,13 +82,34 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        <TextBox TextWrapping="Wrap" Text="" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Width="195" Height="25"/>
-        <TextBox TextWrapping="Wrap" Text="" HorizontalAlignment="Center" Margin="0,147,0,0" VerticalAlignment="Top" Width="195" Height="25"/>
-        <Label Content="Username:" Foreground="White" HorizontalAlignment="Left" Margin="228,110,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Password:" Foreground="White" HorizontalAlignment="Left" Margin="228,147,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Button Style="{DynamicResource RoundenButtonStyle}" Content="Create" HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Height="30" Width="96" FontWeight="Bold" Click="CreateButton"/>
+        <TextBox TextWrapping="Wrap" Opacity="1.0" Text="" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Width="195" Height="25">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox TextWrapping="Wrap" Opacity="1.0" Text="" HorizontalAlignment="Center" Margin="0,147,0,0" VerticalAlignment="Top" Width="195" Height="25">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        
+        <Label Content="Username:" Opacity="1.0" Foreground="White" HorizontalAlignment="Left" Margin="30,110,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Password:" Opacity="1.0" Foreground="White" HorizontalAlignment="Left" Margin="30,147,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Button Style="{DynamicResource RoundenButtonStyle}" Opacity="1.0" Content="Create" HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Height="30" Width="96" FontWeight="Bold" Click="CreateButton">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
 
-        <Frame x:Name="GuesstAcc" Margin="0, 0, 0, 0"/>
+            <Frame x:Name="GuesstAcc" Margin="0, 0, 0, 0"/>
 
     </Grid>
 </Page>

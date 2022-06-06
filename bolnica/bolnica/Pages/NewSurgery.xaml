@@ -70,29 +70,33 @@
         <ImageBrush ImageSource="/images/operations.jpg"/>
     </Page.Background>
 
-    <Grid>
-        <Label Content="Schedule Surgery" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" FontStyle="Italic" Height="50"/>
-        <Label Content="Date:" HorizontalAlignment="Left" Margin="200,107,0,0" VerticalAlignment="Top" FontWeight="Bold">
+    <Grid Background="LightBlue" Opacity="0.8" Height="400" Width="400" Margin="200,10,200,10">
+        <Label Content="Schedule Surgery" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Medium" VerticalContentAlignment="Center" FontStyle="Italic" Height="50">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Time:" HorizontalAlignment="Left" Margin="200,144,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Date:" HorizontalAlignment="Left" Margin="30,107,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Room:" HorizontalAlignment="Left" Margin="199,181,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Time:" HorizontalAlignment="Left" Margin="30,144,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Patient:" HorizontalAlignment="Left" Margin="200,218,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Room:" HorizontalAlignment="Left" Margin="30,181,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Doctor:" HorizontalAlignment="Left" Margin="200,255,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Patient:" HorizontalAlignment="Left" Margin="30,218,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Doctor:" HorizontalAlignment="Left" Margin="30,255,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
