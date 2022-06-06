@@ -77,7 +77,7 @@
             </Label.Effect>
         </Label>
         
-        <ListView x:Name="GRD" ItemsSource="{Binding MeetingList}" Margin="34,101,34,34" >
+        <ListView x:Name="GRD" ItemsSource="{Binding DayOffList}" Margin="34,101,34,34" >
 
             <ListView.Background>
                 <ImageBrush ImageSource="/images/dayOff.jpg"/>
@@ -130,7 +130,7 @@
 
 
 
-                        <Border Grid.Column="5" >
+                        <Border Grid.Column="4" >
                             <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="Accept" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Click="Accept_Click">
                                 <Button.Effect>
                                     <DropShadowEffect/>
@@ -138,7 +138,7 @@
                             </Button>
                         </Border>
                         
-                        <Border Grid.Column="6">
+                        <Border Grid.Column="5">
                             <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="Decline" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Click="Decline_Click">
                                 <Button.Effect>
                                     <DropShadowEffect/>
