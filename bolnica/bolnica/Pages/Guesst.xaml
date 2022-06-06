@@ -98,7 +98,7 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Password:" Opacity="1.0" Foreground="White" HorizontalAlignment="Left" Margin="30,147,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Password:"  Opacity="1.0" Foreground="White" HorizontalAlignment="Left" Margin="30,147,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>

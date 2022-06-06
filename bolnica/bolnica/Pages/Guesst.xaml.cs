@@ -23,12 +23,15 @@ namespace bolnica.Pages
         public Guesst()
         {
             InitializeComponent();
+            DataContext = this;
         }
 
         private void CreateButton(object sender, RoutedEventArgs e)
         {
-            GuesstAcc.Content = new Emergency();
-           
+            //GuesstAcc.Content = new Emergency();
+            var page = new Emergency();
+            NavigationService.Navigate(page);
+
         }
 
         

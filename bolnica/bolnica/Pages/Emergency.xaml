@@ -121,7 +121,7 @@
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Center" Margin="0,184,0,0" VerticalAlignment="Top" Width="196" Height="25">
+        <ComboBox HorizontalAlignment="Center"  Margin="0,184,0,0" VerticalAlignment="Top" Width="196" Height="25">
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>

@@ -28,11 +28,14 @@ namespace bolnica.Pages
 
         private void Guesst_Click(object sender, RoutedEventArgs e)
         {
-            EmergencyCase.Navigate(new Guesst());
+            //EmergencyCase.Navigate(new Guesst());
+            var page = new Guesst();
+            NavigationService.Navigate(page);
         }
 
-      
+        //private void EmergencyCase_Navigated(object sender, NavigationEventArgs e)
+        //{
 
-
+        //}
     }
 }
