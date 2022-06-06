@@ -68,30 +68,34 @@
         </Style>
     </Page.Resources>
 
-    <Grid >
+    <Grid Background="AliceBlue" Opacity="0.9"  Width="400" Height="400" Margin="200,10,200,10" >
 
-        <Label Content="Create Account For Patient" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" FontStyle="Italic" Height="50"/>
-        <TextBox x:Name="PatientName" HorizontalAlignment="Center" Margin="0,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Height="25">
+        <Label Content="Create Account For Patient" HorizontalAlignment="Center"  Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Medium" VerticalContentAlignment="Center" FontStyle="Italic" Height="50">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="PatientName" Opacity="1.0" HorizontalAlignment="Center" Margin="30,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Height="25">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox x:Name="PatientSurname" HorizontalAlignment="Center" Margin="0,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Height="25">
+        <TextBox x:Name="PatientSurname" Opacity="1.0" HorizontalAlignment="Center" Margin="0,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Height="25">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox x:Name="PatientAdress"  HorizontalAlignment="Center" Margin="0,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Height="25">
+        <TextBox x:Name="PatientAdress" Opacity="1.0"  HorizontalAlignment="Center" Margin="0,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Height="25">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox x:Name="PatientUsername" HorizontalAlignment="Center" Margin="0,256,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Height="26">
+        <TextBox x:Name="PatientUsername" Opacity="1.0" HorizontalAlignment="Center" Margin="0,256,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Height="26">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox x:Name="PatientEmail" HorizontalAlignment="Center" Margin="0,293,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Height="25">
+        <TextBox x:Name="PatientEmail" Opacity="1.0" HorizontalAlignment="Center" Margin="0,293,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Height="25">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
@@ -106,38 +110,41 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label Content="Name:" HorizontalAlignment="Left" Margin="200,107,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="15,107,0,0" VerticalAlignment="Top"  FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Surname:" HorizontalAlignment="Left" Margin="200,144,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Surname:" HorizontalAlignment="Left" Margin="15,144,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Date Of Birth:" HorizontalAlignment="Left" Margin="200,181,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Date Of Birth:" HorizontalAlignment="Left" Margin="15,181,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Adress:" HorizontalAlignment="Left" Margin="200,218,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Adress:" HorizontalAlignment="Left" Margin="15,218,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Email:" HorizontalAlignment="Left" Margin="200,292,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="15,292,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Username:" HorizontalAlignment="Left" Margin="200,255,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="15,255,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
+
+
 
         <Frame x:Name="NewAccount" Margin="0, 0, 0, 0"></Frame>
 
     </Grid>
+
 </Page>
