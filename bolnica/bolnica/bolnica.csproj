@@ -21,6 +21,8 @@
     <None Remove="images\cool.png" />
     <None Remove="images\dayOff.jpg" />
     <None Remove="images\doctor.jpg" />
+    <None Remove="images\drugs.jpg" />
+    <None Remove="images\drugsBlur.jpg" />
     <None Remove="images\dynamic.jpg" />
     <None Remove="images\emergency.jpg" />
     <None Remove="images\gluten.png" />
@@ -72,6 +74,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\doctor.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\drugs.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\drugsBlur.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\emergency.jpg">
