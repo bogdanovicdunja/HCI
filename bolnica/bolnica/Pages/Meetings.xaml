@@ -73,7 +73,13 @@
     
     <Grid>
 
-        <Label Content="Scheduled Meetings" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" FontStyle="Italic" Height="50"/>
+        <Label Content="Scheduled Meetings" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Medium" VerticalContentAlignment="Center" FontStyle="Italic" Height="50">
+            <!--<Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>-->
+        </Label>
+        
+        
         <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="Schedule" FontWeight="Bold" Margin="10, 0, 77, 205" HorizontalAlignment="Right" VerticalAlignment="Center" Click="AddMeeting_Click">
             <Button.Effect>
                 <DropShadowEffect/>
@@ -107,7 +113,7 @@
                             </Grid.Background>
                         </Grid>
 
-                        <Border BorderBrush="Blue" Grid.Column="1"  Padding="2, 0" BorderThickness="2, 0, 0, 0">
+                        <Border BorderBrush="SandyBrown" Grid.Column="1"  Padding="2, 0" BorderThickness="2, 0, 0, 0">
                             <StackPanel Margin="5, 5, 5, 5">
 
                                 <TextBlock Text="Date: " FontWeight="Bold"  />

@@ -43,7 +43,6 @@ namespace bolnica.Pages
         private string PATIENT_FILE = _projectPath + "\\Resources\\patients.txt";
         private const string CSV_DELIMITER = ";";
 
-        //public ObservableCollection<Patient> PatientsList { get; set; }  //NE MOZE ISTO KAO NA FRONTENDU
 
 
 

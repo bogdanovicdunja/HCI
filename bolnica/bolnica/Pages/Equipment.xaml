@@ -71,11 +71,13 @@
     </Page.Background>
 
     <Grid>
-        <Label Content="Orders" Foreground="White" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" FontStyle="Italic" Height="50">
-            <Label.Effect>
+        <Label Content="Orders" Foreground="Black" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" FontStyle="Italic" Height="50">
+            <!--<Label.Effect>
                 <DropShadowEffect/>
-            </Label.Effect>
+            </Label.Effect>-->
         </Label>
+        
+        
         <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="New Order" FontWeight="Bold" Margin="10, 0, 77, 205" HorizontalAlignment="Right" VerticalAlignment="Center" Click="NewOrder_Click">
             <Button.Effect>
                 <DropShadowEffect/>

@@ -37,7 +37,6 @@ namespace bolnica.Pages
         {
             InitializeComponent();
             DataContext = this;
-
             _equipmentRepository = new EquipmentRepository(EQUIPMENT_FILE, CSV_DELIMITER);
            
         }
@@ -47,7 +46,6 @@ namespace bolnica.Pages
         {
             
             ComboBoxItem cboKind = Kinds.SelectedItem as ComboBoxItem;
-            //cboitem.Content.ToString();
             _kindOfEquipment = cboKind.Content.ToString();
 
             _amountOfEquipment = Convert.ToInt32(Amount.Text);

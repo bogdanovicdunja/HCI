@@ -71,10 +71,10 @@
     </Page.Background>
 
     <Grid>
-        <Label Content="Requests For Day-Off" Foreground="White" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" FontStyle="Italic" Height="50">
-            <Label.Effect>
+        <Label Content="Requests For Day-Off" Foreground="Black" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" FontStyle="Italic" Height="50">
+            <!--<Label.Effect>
                 <DropShadowEffect/>
-            </Label.Effect>
+            </Label.Effect>-->
         </Label>
         
         <ListView x:Name="GRD" ItemsSource="{Binding DayOffList}" Margin="34,101,34,34" >
