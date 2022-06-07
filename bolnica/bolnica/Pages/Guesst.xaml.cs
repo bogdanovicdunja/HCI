@@ -1,5 +1,8 @@
-﻿using System;
+﻿using bolnica.Model;
+using bolnica.Repository;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,15 +23,47 @@ namespace bolnica.Pages
     /// </summary>
     public partial class Guesst : Page
     {
+        private PatientRepository _patientRepository;
+   
+
+        private static string _projectPath = System.Reflection.Assembly.GetExecutingAssembly().Location
+          .Split(new string[] { "bin" }, StringSplitOptions.None)[0];
+
+        private string PATIENT_FILE = _projectPath + "\\Resources\\patients.txt";
+        private const string CSV_DELIMITER = ";";
         public Guesst()
         {
             InitializeComponent();
             DataContext = this;
+            _patientRepository = new PatientRepository(PATIENT_FILE, CSV_DELIMITER);
         }
 
         private void CreateButton(object sender, RoutedEventArgs e)
         {
             //GuesstAcc.Content = new Emergency();
+
+            DateTime dt = DateTime.Now;
+            //DateTime datumrodjenja = DateTime.ParseExact(dt, "ddMMyyyy",
+            //                      CultureInfo.InvariantCulture);
+            
+
+            string date_of_birth = dt.ToString("dd-MM-yyyy");
+            string Username = User.Text;
+            string Name = "N";
+            string Surname = "N";
+            string Adress = "Xxxx";
+            string Email = "someone@gmail.com";
+
+            if (_patientRepository.FindPatientByUsername(Username) == null)
+            {
+                 Patient p = new Patient(Name, Surname, date_of_birth, Username, Adress, Email);
+                _patientRepository.AddPatient(p);
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show("Username " + Username + " already exists!");
+            }
+
             var page = new Emergency();
             NavigationService.Navigate(page);
 

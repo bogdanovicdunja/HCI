@@ -149,7 +149,8 @@ namespace bolnica.Repository
         {
             Patient patient = new Patient();
             string[] tokens = patientCSVFormat.Split(_delimeter.ToCharArray());
-
+            // 1; DUNJICA; sssss; 02 - May - 22; s; sss; sss @gmail.com
+            //4;ARSENIJE;Lalic;22-May-22;arsa;Svetozara Miletica 4;arsa@gmail.com
             uint Id = uint.Parse(tokens[0]);
             //string Username = tokens[1];
             //string Password = tokens[2];
@@ -157,8 +158,8 @@ namespace bolnica.Repository
             string Surname = tokens[2];
             //DateTime.Parse(tokens[4]);
             string DateOfBirth = tokens[3];
-            string Username = tokens[5];
-            string Adress = tokens[4];
+            string Username = tokens[4];
+            string Adress = tokens[5];
             string Email = tokens[6];
             //Enum.TryParse(tokens[7], out Gender gender);
             // 

@@ -81,52 +81,89 @@
                 </LinearGradientBrush>
             </Label.Background>
         </Label>
-        <DatePicker HorizontalAlignment="Center" Margin="0,221,0,0" VerticalAlignment="Top" Width="196" Height="25">
+        
+        
+        <!--<DatePicker HorizontalAlignment="Center" Margin="0,221,0,0" VerticalAlignment="Top" Width="196" Height="25">
             <DatePicker.Effect>
                 <DropShadowEffect/>
             </DatePicker.Effect>
-        </DatePicker>
-        <Button  Style="{DynamicResource RoundenButtonStyle}" Content="Schedule" HorizontalAlignment="Center" Margin="0,267,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.035,0.414" Height="30" Width="96" FontWeight="Bold">
-            <Button.Effect>
-                <DropShadowEffect/>
-            </Button.Effect>
-        </Button>
+        </DatePicker>-->
+      
         <Label Content="Patient:" Foreground="White" HorizontalAlignment="Left" Margin="30,113,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Specialization:" Foreground="White" HorizontalAlignment="Left" Margin="30,144,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Special:" Foreground="White" HorizontalAlignment="Left" Margin="30,144,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Doctor:" Foreground="White" HorizontalAlignment="Left" Margin="30,181,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <Label Content="Move App:" Foreground="White" HorizontalAlignment="Left" Margin="30,181,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <Label Content="Date:" Foreground="White" HorizontalAlignment="Left" Margin="30,219,0,0" VerticalAlignment="Top" FontWeight="Bold">
+        <!--<Label Content="Date:" Foreground="White" HorizontalAlignment="Left" Margin="30,219,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
-        </Label>
-        <ComboBox HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Width="196" Height="25">
+        </Label-->
+        <ComboBox x:Name="Patients" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Width="196" Height="25">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Username}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Center" Margin="0,147,0,0" VerticalAlignment="Top" Width="196" Height="25">
+        
+        <ComboBox x:Name="Spec" HorizontalAlignment="Center" Margin="0,147,0,0" VerticalAlignment="Top" Width="196" Height="25">
+
+            <ComboBoxItem Content="Cardiology"/>
+            <ComboBoxItem Content="Neurology"/>
+            <ComboBoxItem Content="Oftalmology"/>
+            <ComboBoxItem Content="Dermatology"/>
+            <ComboBoxItem Content="Urology"/>
+            <!--<ComboBoxItem Content="Radiography"/>
+            <ComboBoxItem Content="Reflex hammer"/>
+            <ComboBoxItem Content="Defibrillator"/>
+            <ComboBoxItem Content="Dyalizer"/>
+            <ComboBoxItem Content="Syringe and needle"/>-->
+            
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Specialization}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+            
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Center"  Margin="0,184,0,0" VerticalAlignment="Top" Width="196" Height="25">
+        
+        <ComboBox x:Name="App" HorizontalAlignment="Center"  Margin="0,184,0,0" VerticalAlignment="Top" Width="196" Height="25">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Start}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+            
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
         </ComboBox>
-        <Button  Style="{DynamicResource RoundenButtonStyle}" Content="Guesst" FontWeight="Bold" HorizontalAlignment="Center" Height="30" Width="96" Margin="0,310,0,0" VerticalAlignment="Top" Click="Guesst_Click">
+
+
+        <Button  Style="{DynamicResource RoundenButtonStyle}" Content="Schedule" HorizontalAlignment="Center" Margin="0,221,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.035,0.414" Height="30" Width="96" FontWeight="Bold" Click="Schedule_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        
+        <Button  Style="{DynamicResource RoundenButtonStyle}" Content="Guesst" FontWeight="Bold" HorizontalAlignment="Center" Height="30" Width="96" Margin="0,260,0,0" VerticalAlignment="Top" Click="Guesst_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
