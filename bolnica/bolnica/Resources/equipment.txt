@@ -3,3 +3,4 @@
 3;Dyalizer;1784;Catheter;17
 4;Defibrillator;29
 5;Catheter;2
+6;Radiography;9
