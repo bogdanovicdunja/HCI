@@ -114,7 +114,9 @@ namespace bolnica.Pages
 
             //public Appointments(Appointment appointment);
 
-            NewApp.Content = new Appointments();    //vodi na stranicu sa svim zakazanim pregledima
+            //NewApp.Content = new Appointments();    //vodi na stranicu sa svim zakazanim pregledima
+            var page = new Appointments();
+            NavigationService.Navigate(page);
         }
     }
 }

@@ -92,7 +92,7 @@
 
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Grid Width="670" Height="80">
+                    <Grid Width="670" Height="60">
 
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="100"/>

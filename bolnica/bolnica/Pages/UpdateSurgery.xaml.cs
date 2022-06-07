@@ -109,7 +109,9 @@ namespace bolnica.Pages
             Model.Surgery s = _surgeryRepository.UpdateSurgery(tempSurgery);
 
 
-            NewSur.Content = new Surgery();    //vodi na stranicu sa svim zakazanim operacijama
+            //NewSur.Content = new Surgery();    //vodi na stranicu sa svim zakazanim operacijama
+            var page = new Surgery();
+            NavigationService.Navigate(page);
         }
     }
 }

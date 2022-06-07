@@ -87,7 +87,9 @@ namespace bolnica.Pages
             Meeting m = _meetingRepository.AddMeeting(meeting);
 
 
-            NewMeet.Content = new Meetings();
+            //NewMeet.Content = new Meetings();
+            var page = new Meetings();
+            NavigationService.Navigate(page);
         }
 
       

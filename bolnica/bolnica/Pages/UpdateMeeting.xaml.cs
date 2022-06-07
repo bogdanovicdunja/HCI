@@ -122,7 +122,9 @@ namespace bolnica.Pages
             Meeting m = _meetingRepository.UpdateMeeting(tempMeeting);
 
 
-            NewMeet.Content = new Meetings();
+            //NewMeet.Content = new Meetings();
+            var page = new Meetings();
+            NavigationService.Navigate(page);
         }
     }
 }

@@ -99,7 +99,9 @@ namespace bolnica.Pages
             Appointment appointment = new Appointment(_startAppointment, _patientName, _doctorName, _roomName);
             Appointment a = _appointmentRepository.AddAppointment(appointment);
 
-            NewSur.Content = new Surgery();
+            //NewSur.Content = new Surgery();
+            var page = new Surgery();
+            NavigationService.Navigate(page);
         }
     }
 }
