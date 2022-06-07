@@ -45,15 +45,6 @@ namespace bolnica.Pages
             DayOffList.Add(day4);
           
 
-            //DayOffList.Add(day1);
-            //DayOffList.Add(day2);
-            //DayOffList.Add(day3);
-            //DayOffList.Add(day4);
-
-            //GRD.Items.Add(day1);
-            //GRD.Items.Add(day2);
-            //GRD.Items.Add(day3);
-            //GRD.Items.Add(day4);
             for(int i=0; i<DayOffList.Count; i++)
             {
                 GRD.Items.Add(DayOffList[i]);   
@@ -70,28 +61,28 @@ namespace bolnica.Pages
                 if (dor.Id == DayOffList[i].Id)
                 {
                     GRD.Items.Remove(DayOffList[i]);
+                    MessageBoxResult result = MessageBox.Show("Successfuly accepted request!");
+                    return;         //obavezno! ne obrise bez toga.
                 }
+                
             }
 
-            //if(dor != null)
-            //{
-            //    for(int i=0; i<DayOffList.Count; i++)
-            //    {
-            //        if(DayOffList[i].Id == dor.Id)
-            //        {
-            //            GRD.Items.Remove(DayOffList[i]);
-            //        }
-            //    }
-            //}++
-            //foreach (DayOffRequest item in GRD.SelectedItems)
-            //{
-            //    GRD.Items.Remove(item);
-            //}
         }
 
         private void Decline_Click(object sender, RoutedEventArgs e)
         {
+            DayOffRequest dor = GRD.SelectedItem as DayOffRequest;
 
+            for (int i = 0; i < DayOffList.Count; i++)
+            {
+                if (dor.Id == DayOffList[i].Id)
+                {
+                    GRD.Items.Remove(DayOffList[i]);
+                    MessageBoxResult result = MessageBox.Show("Successfuly declined request!");
+                    return;
+                }
+                
+            }
         }
     }
 }
