@@ -73,9 +73,10 @@ namespace bolnica.Pages
             //MessageBoxResult result = MessageBox.Show(_patientName);
             Patient p = _patientRepository.AddPatient(patient);
 
-            
 
-            NewAccount.Content = new AllPatients();
+            var page = new AllPatients();
+            NavigationService.Navigate(page);
+            //NewAccount.Content = new AllPatients();
 
 
         }

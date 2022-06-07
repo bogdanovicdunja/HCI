@@ -1,1 +1,5 @@
-﻿
+﻿1;Scalpels;8
+2;Radiography;50
+3;Dyalizer;1784;Catheter;17
+4;Defibrillator;29
+5;Catheter;2

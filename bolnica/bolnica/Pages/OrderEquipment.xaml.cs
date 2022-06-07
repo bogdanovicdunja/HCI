@@ -36,16 +36,22 @@ namespace bolnica.Pages
         public OrderEquipment()
         {
             InitializeComponent();
+            DataContext = this;
+
+            _equipmentRepository = new EquipmentRepository(EQUIPMENT_FILE, CSV_DELIMITER);
+           
         }
 
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             
-            Equipment cboKind = Kinds.SelectedItem as Equipment;
-            _kindOfEquipment = cboKind.Name;
+            ComboBoxItem cboKind = Kinds.SelectedItem as ComboBoxItem;
+            //cboitem.Content.ToString();
+            _kindOfEquipment = cboKind.Content.ToString();
 
-            _amountOfEquipment = int.Parse(Amount.ToString());
+            _amountOfEquipment = Convert.ToInt32(Amount.Text);
+            
 
             Model.Equipment equipment = new Model.Equipment(_kindOfEquipment, _amountOfEquipment);
             Model.Equipment eq = _equipmentRepository.AddEquipment(equipment);

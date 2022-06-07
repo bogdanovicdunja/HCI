@@ -48,12 +48,12 @@
                                 <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
                             </Trigger>
                             <Trigger Property="IsMouseOver" Value="true">
-                                <Setter Property="Background" TargetName="border" Value="#FF95725F"/>
-                                <Setter Property="BorderBrush" TargetName="border" Value="#FF95725F"/>
+                                <Setter Property="Background" TargetName="border" Value="#FFB0E0E6"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#FFB0E0E6"/>
                             </Trigger>
                             <Trigger Property="IsPressed" Value="true">
-                                <Setter Property="Background" TargetName="border"  Value="#FFD6AD97"/>
-                                <Setter Property="BorderBrush" TargetName="border"  Value="#FFD6AD97"/>
+                                <Setter Property="Background" TargetName="border"  Value="#FF87CEEB"/>
+                                <Setter Property="BorderBrush" TargetName="border"  Value="#FF87CEEB"/>
                             </Trigger>
                             <Trigger Property="IsEnabled" Value="false">
                                 <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
@@ -89,7 +89,7 @@
         </Label>
 
 
-        <ComboBox x:Name="Kinds" Text="{Binding Name}" HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" Height="25" Width="196">
+        <ComboBox x:Name="Kinds" HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" Height="25" Width="196">
             <ComboBoxItem Content="Bandages"/>
             <ComboBoxItem Content="Scalpels"/>
             <ComboBoxItem Content="Stethoscope"/>
@@ -100,6 +100,11 @@
             <ComboBoxItem Content="Defibrillator"/>
             <ComboBoxItem Content="Dyalizer"/>
             <ComboBoxItem Content="Syringe and needle"/>
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
