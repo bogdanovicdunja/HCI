@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "7QiwUbWmBZZlRE4JdDmC8W/+M+AsUKYBWJ60nMXm11blvaz6BZwY4bnK7u8TNDzdDL9ZnoCaKHmlCUHzshN9nA==",
+  "dgSpecHash": "LjmfgAZxu39PxUko4kAgibKvHuNKyY6nmyTqkEgq4QWjdqJqAx5uTGZ5c9I1T+Dc9/lxjzR6TOMxp+H1JeQWdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\dunja\\Desktop\\HCI\\bolnica\\bolnica\\bolnica.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dunja\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
+    "C:\\Users\\dunja\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
     "C:\\Users\\dunja\\.nuget\\packages\\syncfusion.compression.base\\20.1.0.59\\syncfusion.compression.base.20.1.0.59.nupkg.sha512",
     "C:\\Users\\dunja\\.nuget\\packages\\syncfusion.docio.wpf\\20.1.0.59\\syncfusion.docio.wpf.20.1.0.59.nupkg.sha512",
     "C:\\Users\\dunja\\.nuget\\packages\\syncfusion.doctopdfconverter.wpf\\20.1.0.59\\syncfusion.doctopdfconverter.wpf.20.1.0.59.nupkg.sha512",
@@ -11,5 +13,26 @@
     "C:\\Users\\dunja\\.nuget\\packages\\syncfusion.officechart.base\\20.1.0.59\\syncfusion.officechart.base.20.1.0.59.nupkg.sha512",
     "C:\\Users\\dunja\\.nuget\\packages\\syncfusion.pdf.wpf\\20.1.0.59\\syncfusion.pdf.wpf.20.1.0.59.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LiveCharts 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "LiveCharts",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LiveCharts.Wpf 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "LiveCharts.Wpf",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

@@ -1,8 +1,13 @@
 ﻿using bolnica.Model;
 using bolnica.Repository;
+using Syncfusion.Pdf;
+using Syncfusion.Pdf.Graphics;
+using Syncfusion.Pdf.Tables;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -92,6 +97,68 @@ namespace bolnica.Pages
             NavigationService.Navigate(page);
         }
 
-      
+
+
+        public void SendMessage()
+        {
+            MessageBox.Show("Report is successfully created!");
+        }
+
+        public void Report_Click(object sender, RoutedEventArgs e)
+        {
+            GeneratePDF();
+            SendMessage();
+        }
+
+        public void GeneratePDF()
+        {
+            using (PdfDocument doc = new PdfDocument())
+            {
+                PdfPage page = doc.Pages.Add();
+                PdfGraphics graphics = page.Graphics;
+                PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20);
+                PdfFont font1 = new PdfStandardFont(PdfFontFamily.Helvetica, 15);
+                string naslov = "Hospital Health";
+                //PdfImage image = PdfImage.FromFile(@"C:\Users\dunja\Desktop\HCI\bolnica\bolnica\images\heart.png");
+                //graphics.DrawImage(image, 165, 0);
+                graphics.DrawString(naslov, font, PdfBrushes.Black, new PointF(200, 0));
+                string textPDF = "Report abaout room occupation for 25/5/2022 - 25/6/2022 : ";
+                graphics.DrawString(textPDF, font1, PdfBrushes.Black, new PointF(80, 75));
+                PdfLightTable pdfLightTable = new PdfLightTable();
+                DataTable table = new DataTable();
+                //table.Columns.Add("Date");
+                table.Columns.Add("Room Name");
+                table.Columns.Add("Period");
+                table.Columns.Add("Doctor");
+
+                table.Rows.Add(new string[] { "room 202", "10:00h", "Dr Nikolina" });
+                table.Rows.Add(new string[] { "room 202", "10:30h", "Dr Sandra" });
+                table.Rows.Add(new string[] { "room 202", "12:00h", "Dr Sava" });
+                table.Rows.Add(new string[] { "room 303", "08:00h", "Dr Dunja" });
+                table.Rows.Add(new string[] { "room 303", "08:30h", "Dr Nikolina" });
+                table.Rows.Add(new string[] { "room 303", "09:15h", "Dr Maksim" });
+                table.Rows.Add(new string[] { "room 404", "10:00h", "Dr Dunja" });
+                table.Rows.Add(new string[] { "room 404", "10:30h", "Dr Olivera" });
+                table.Rows.Add(new string[] { "room 404", "12:00h", "Dr Adrijana" });
+                table.Rows.Add(new string[] { "room 505", "08:00h", "Dr Zoran" });
+                table.Rows.Add(new string[] { "room 505", "08:30h", "Dr Svetlana" });
+                table.Rows.Add(new string[] { "room 505", "08:45h", "Dr Andrej" });
+                table.Rows.Add(new string[] { "room 606", "13:00h", "Dr Aleksandar" });
+                table.Rows.Add(new string[] { "room 606", "14:30h", "Dr Marko" });
+                table.Rows.Add(new string[] { "room 606", "15:00h", "Dr Ivan" });
+
+
+                pdfLightTable.DataSource = table;
+                pdfLightTable.Style.ShowHeader = true;
+                pdfLightTable.Draw(page, new PointF(0, 100));
+                doc.Save(@"C:\Users\dunja\Desktop\HCI\bolnica\bolnica\Reports\RoomOccupation.pdf");
+                // doc.Save("RoomOccupation.pdf");
+                doc.Close(true);
+
+
+            }
+        }
+
+
     }
 }

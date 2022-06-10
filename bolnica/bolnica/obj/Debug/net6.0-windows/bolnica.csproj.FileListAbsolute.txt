@@ -175,3 +175,5 @@ C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\Syncfusion.L
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\Syncfusion.OfficeChart.Base.dll
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\Syncfusion.Pdf.Base.dll
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\bolnica.csproj.CopyComplete
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll

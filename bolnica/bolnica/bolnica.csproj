@@ -40,6 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
     <PackageReference Include="Syncfusion.DocToPDFConverter.Wpf" Version="20.1.0.59" />
   </ItemGroup>
 
