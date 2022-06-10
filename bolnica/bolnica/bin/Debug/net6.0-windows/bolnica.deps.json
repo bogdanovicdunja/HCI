@@ -7,8 +7,76 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "bolnica/1.0.0": {
+        "dependencies": {
+          "Syncfusion.DocToPDFConverter.Wpf": "20.1.0.59"
+        },
         "runtime": {
           "bolnica.dll": {}
+        }
+      },
+      "Syncfusion.Compression.Base/20.1.0.59": {
+        "runtime": {
+          "lib/net5.0/Syncfusion.Compression.Base.dll": {
+            "assemblyVersion": "20.1500.0.59",
+            "fileVersion": "20.1500.0.59"
+          }
+        }
+      },
+      "Syncfusion.DocIO.Wpf/20.1.0.59": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "20.1.0.59",
+          "Syncfusion.Licensing": "20.1.0.59",
+          "Syncfusion.OfficeChart.Base": "20.1.0.59"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.DocIO.Base.dll": {
+            "assemblyVersion": "20.1500.0.59",
+            "fileVersion": "20.1500.0.59"
+          }
+        }
+      },
+      "Syncfusion.DocToPDFConverter.Wpf/20.1.0.59": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "20.1.0.59",
+          "Syncfusion.DocIO.Wpf": "20.1.0.59",
+          "Syncfusion.Pdf.Wpf": "20.1.0.59"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.DocToPdfConverter.Base.dll": {
+            "assemblyVersion": "20.1500.0.59",
+            "fileVersion": "20.1500.0.59"
+          }
+        }
+      },
+      "Syncfusion.Licensing/20.1.0.59": {
+        "runtime": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "20.1.0.59",
+            "fileVersion": "20.1.0.59"
+          }
+        }
+      },
+      "Syncfusion.OfficeChart.Base/20.1.0.59": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "20.1.0.59"
+        },
+        "runtime": {
+          "lib/net5.0/Syncfusion.OfficeChart.Base.dll": {
+            "assemblyVersion": "20.1500.0.59",
+            "fileVersion": "20.1500.0.59"
+          }
+        }
+      },
+      "Syncfusion.Pdf.Wpf/20.1.0.59": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "20.1.0.59",
+          "Syncfusion.Licensing": "20.1.0.59"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Pdf.Base.dll": {
+            "assemblyVersion": "20.1500.0.59",
+            "fileVersion": "20.1500.0.59"
+          }
         }
       }
     }
@@ -18,6 +86,48 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Syncfusion.Compression.Base/20.1.0.59": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R340t9z+l1kjaNjmgefOx7KuLthdrHqN0HagtDMj7fnEFTllasfnRewaSxnMJifJX0Q0UW/ey8fzsKA00sTPnA==",
+      "path": "syncfusion.compression.base/20.1.0.59",
+      "hashPath": "syncfusion.compression.base.20.1.0.59.nupkg.sha512"
+    },
+    "Syncfusion.DocIO.Wpf/20.1.0.59": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AtLZOvBebT+pZGwGMRYGSv8+zrIItMUzcVFIItie26oFppohIsh4wBvHsrBPzIVygRuH5N6iv++xKlqpkJKFwA==",
+      "path": "syncfusion.docio.wpf/20.1.0.59",
+      "hashPath": "syncfusion.docio.wpf.20.1.0.59.nupkg.sha512"
+    },
+    "Syncfusion.DocToPDFConverter.Wpf/20.1.0.59": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mkoAGjqyesLQ2t4YSjru994097/NQmDo/wZPijLLHG8kp8Be5inQ7R1t/jcXPnlbDjtdLIzo+TUz4fL/LJ71FA==",
+      "path": "syncfusion.doctopdfconverter.wpf/20.1.0.59",
+      "hashPath": "syncfusion.doctopdfconverter.wpf.20.1.0.59.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/20.1.0.59": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W8SzUDmLaX8Ivs9f7FYbxJGNkbjrYxjVOB3+dzQtk8UfhPwH3K8zD2WhNE61WRpB9ecTfe9YAmk2KnfapbOdEw==",
+      "path": "syncfusion.licensing/20.1.0.59",
+      "hashPath": "syncfusion.licensing.20.1.0.59.nupkg.sha512"
+    },
+    "Syncfusion.OfficeChart.Base/20.1.0.59": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pKXNBpxE2zR8YxDwozR0otR7cMOcQ9qeUkod/OZkCk0VNisskIuCUL/QodhzF3DNsy/LzG+fqlo328Be+9fecQ==",
+      "path": "syncfusion.officechart.base/20.1.0.59",
+      "hashPath": "syncfusion.officechart.base.20.1.0.59.nupkg.sha512"
+    },
+    "Syncfusion.Pdf.Wpf/20.1.0.59": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BHPDxIgqT2/Q5DfnCQl+rwkaN+q6QtWByPNWkZDpJwL9H/lC5oszI3urQzthFa07s3MpoedGkx39NF+hxcJi0A==",
+      "path": "syncfusion.pdf.wpf/20.1.0.59",
+      "hashPath": "syncfusion.pdf.wpf.20.1.0.59.nupkg.sha512"
     }
   }
 }

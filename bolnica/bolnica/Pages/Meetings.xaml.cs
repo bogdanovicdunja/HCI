@@ -1,5 +1,6 @@
 ﻿using bolnica.Model;
 using bolnica.Repository;
+using bolnica.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -37,15 +38,16 @@ namespace bolnica.Pages
         public Meetings()
         {
             InitializeComponent();
-            GRD.Items.Clear();
+            this.DataContext = new MeetingsListingVM();
+            //GRD.Items.Clear();
 
-            _meetingRepository = new MeetingRepository(MEETING_FILE, CSV_DELIMITER);
-            MeetList = new ObservableCollection<Meeting>(_meetingRepository.GetAll().ToList());
+            //_meetingRepository = new MeetingRepository(MEETING_FILE, CSV_DELIMITER);
+            //MeetList = new ObservableCollection<Meeting>(_meetingRepository.GetAll().ToList());
 
-            for(int i=0; i< MeetList.Count; i++)
-            {
-                GRD.Items.Add(MeetList[i]);
-            }
+            //for(int i=0; i< MeetList.Count; i++)
+            //{
+            //    GRD.Items.Add(MeetList[i]);
+            //}
 
         }
 

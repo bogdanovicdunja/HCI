@@ -159,6 +159,12 @@
             </Button.Effect>
         </Button>
 
+        <Button Style="{DynamicResource RoundenButtonStyle}" Opacity="1.0" Content="Report" HorizontalAlignment="Center" Margin="0,335,0,0" VerticalAlignment="Top" Height="30" Width="96" Click="Report_Click" FontWeight="Bold">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
         <Frame x:Name="NewApp" Margin="0, 0, 0, 0" ></Frame>
 
 

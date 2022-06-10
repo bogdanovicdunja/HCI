@@ -168,3 +168,10 @@ C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\Update
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\UpdateSurgery.baml
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\OrderEquipment.g.cs
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\OrderEquipment.baml
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\Syncfusion.Compression.Base.dll
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\Syncfusion.DocIO.Base.dll
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\Syncfusion.DocToPdfConverter.Base.dll
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\Syncfusion.Licensing.dll
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\Syncfusion.OfficeChart.Base.dll
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\Syncfusion.Pdf.Base.dll
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\bolnica.csproj.CopyComplete

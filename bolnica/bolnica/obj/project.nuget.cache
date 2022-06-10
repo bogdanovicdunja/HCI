@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "0sw4Ljfr2ndATSPOPYaqbJmvR+lO24YHOY5xSqKi/lovgYeHGu4tsd44abP9fRCSQnRxzbeuWJIVQx5lQ4CYaA==",
+  "dgSpecHash": "7QiwUbWmBZZlRE4JdDmC8W/+M+AsUKYBWJ60nMXm11blvaz6BZwY4bnK7u8TNDzdDL9ZnoCaKHmlCUHzshN9nA==",
   "success": true,
   "projectFilePath": "C:\\Users\\dunja\\Desktop\\HCI\\bolnica\\bolnica\\bolnica.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dunja\\.nuget\\packages\\syncfusion.compression.base\\20.1.0.59\\syncfusion.compression.base.20.1.0.59.nupkg.sha512",
+    "C:\\Users\\dunja\\.nuget\\packages\\syncfusion.docio.wpf\\20.1.0.59\\syncfusion.docio.wpf.20.1.0.59.nupkg.sha512",
+    "C:\\Users\\dunja\\.nuget\\packages\\syncfusion.doctopdfconverter.wpf\\20.1.0.59\\syncfusion.doctopdfconverter.wpf.20.1.0.59.nupkg.sha512",
+    "C:\\Users\\dunja\\.nuget\\packages\\syncfusion.licensing\\20.1.0.59\\syncfusion.licensing.20.1.0.59.nupkg.sha512",
+    "C:\\Users\\dunja\\.nuget\\packages\\syncfusion.officechart.base\\20.1.0.59\\syncfusion.officechart.base.20.1.0.59.nupkg.sha512",
+    "C:\\Users\\dunja\\.nuget\\packages\\syncfusion.pdf.wpf\\20.1.0.59\\syncfusion.pdf.wpf.20.1.0.59.nupkg.sha512"
+  ],
   "logs": []
 }

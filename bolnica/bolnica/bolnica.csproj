@@ -40,6 +40,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Syncfusion.DocToPDFConverter.Wpf" Version="20.1.0.59" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="images\blue.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -124,6 +128,10 @@
     <Resource Include="images\dynamic.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Reports\" />
   </ItemGroup>
 
 </Project>

@@ -4,3 +4,4 @@
 4;Defibrillator;29
 5;Catheter;2
 6;Radiography;9
+7;Catheter;12
