@@ -61,6 +61,11 @@ namespace bolnica.Pages
         }
 
 
+        private void ChartButton_Click(object sender, RoutedEventArgs e)
+        {
+            var page = new AppointmentChart(AppList);
+            NavigationService.Navigate(page);
+        }
         private void AddAppointment_Click(object sender, RoutedEventArgs e)
         {
             AppFrame.Navigate(new NewAppointment());

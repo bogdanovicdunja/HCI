@@ -177,3 +177,5 @@ C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\Syncfusion.P
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\bolnica.csproj.CopyComplete
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\LiveCharts.dll
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\AppointmentChart.g.cs
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\AppointmentChart.baml

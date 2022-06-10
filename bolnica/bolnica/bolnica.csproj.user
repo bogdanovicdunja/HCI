@@ -13,6 +13,9 @@
     <Compile Update="Pages\AllPatients.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\AppointmentChart.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\Appointments.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -76,6 +79,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\AllPatients.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AppointmentChart.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Appointments.xaml">

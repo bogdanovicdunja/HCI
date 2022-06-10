@@ -83,6 +83,14 @@
             </Button.Effect>
         </Button>
 
+        <Button Style="{DynamicResource RoundenButtonStyle}" Width="96" Height="30" Content="Show chart" FontWeight="Bold" Margin="10, 0, 70, 150" HorizontalAlignment="Right" VerticalAlignment="Center" Click="ChartButton_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+
+
         <ListView x:Name="GRD" ItemsSource="{Binding AppList}" Margin="34,101,34,34" >
 
             <ListView.Background>
@@ -163,6 +171,8 @@
             </ListView.ItemTemplate>
 
         </ListView>
+        
+        
 
         <Frame x:Name="AppFrame"  Margin="0, 0, 0, 0"  />
 
