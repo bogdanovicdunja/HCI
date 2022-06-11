@@ -183,3 +183,5 @@ C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\Meetin
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\MeetingsChart.baml
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\SurgeryChart.g.cs
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\SurgeryChart.baml
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\EquipmentChart.g.cs
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\EquipmentChart.baml

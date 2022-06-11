@@ -55,7 +55,7 @@ namespace bolnica.Pages
 
         private void Chart_Click(object sender, RoutedEventArgs e)
         {
-            var page = new EquipmentChart();
+            var page = new EquipmentChart(OrderList);
             NavigationService.Navigate(page);
         }
     }

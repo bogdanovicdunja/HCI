@@ -1,9 +1,9 @@
-﻿1;Scalpels;8
+﻿1;Scalpels;80
 2;Radiography;50
-3;Dyalizer;1784;Catheter;17
+3;Dyalizer;178
 4;Defibrillator;29
-5;Catheter;2
-6;Radiography;9
-7;Catheter;12
-8;Bandages;17
-9;Syringe and needle;23
+5;Radiography;93
+6;Catheter;122
+7;Bandages;17
+8;Syringe and needle;23
+9;Bandages;18
