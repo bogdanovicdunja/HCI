@@ -83,10 +83,22 @@ namespace bolnica.Pages
         {
             _startMeeting = dt;
 
+            if (Rooms.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Room must be selected!");
+                return;
+            }
             Room cboRoom = Rooms.SelectedItem as Room;
             _roomName = cboRoom.Name;
 
+
+
             _topic = Topics.Text;
+            if(_topic == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Topic can't be empty!");
+                return;
+            }
 
             Meeting meeting = new Meeting(_startMeeting, _roomName, _topic);
             Meeting m = _meetingRepository.AddMeeting(meeting);

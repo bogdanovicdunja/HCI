@@ -44,12 +44,30 @@ namespace bolnica.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (Kinds.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Equipment type must be selected!");
+                return;
+            }
             ComboBoxItem cboKind = Kinds.SelectedItem as ComboBoxItem;
             _kindOfEquipment = cboKind.Content.ToString();
 
-            _amountOfEquipment = Convert.ToInt32(Amount.Text);
-            
+            try
+            {
+                _amountOfEquipment = Convert.ToInt32(Amount.Text);
+            }
+            catch
+            {
+                MessageBoxResult result = MessageBox.Show("Amount can't be empty or a string!");
+            }
+            if (_amountOfEquipment <= 0)
+            {
+                MessageBoxResult result = MessageBox.Show("Amount must be positive integer!");
+                return;
+            }
+
+          
+
 
             Model.Equipment equipment = new Model.Equipment(_kindOfEquipment, _amountOfEquipment);
             Model.Equipment eq = _equipmentRepository.AddEquipment(equipment);

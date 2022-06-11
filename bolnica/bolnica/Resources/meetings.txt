@@ -5,3 +5,7 @@
 5;08-Jun-22 8:00:00 AM;soba 202;ssdas
 6;18-Jun-22 9:00:00 AM;soba 202;nebitno
 7;06-Jun-22 9:00:00 AM;soba 404;svsasbda
+8;09-Jun-22 9:00:00 AM;soba 202;equipment needed
+9;01-Jan-01 12:00:00 AM;soba 505;vacations
+10;29-May-22 9:00:00 AM;soba 505;opeerations
+11;20-Jun-22 10:00:00 AM;soba 404;appointments

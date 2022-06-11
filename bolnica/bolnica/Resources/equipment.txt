@@ -5,3 +5,5 @@
 5;Catheter;2
 6;Radiography;9
 7;Catheter;12
+8;Bandages;17
+9;Syringe and needle;23

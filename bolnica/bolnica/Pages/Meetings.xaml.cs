@@ -38,16 +38,16 @@ namespace bolnica.Pages
         public Meetings()
         {
             InitializeComponent();
-            this.DataContext = new MeetingsListingVM();
-            //GRD.Items.Clear();
+            //this.DataContext = new MeetingsListingVM();
+            GRD.Items.Clear();
 
-            //_meetingRepository = new MeetingRepository(MEETING_FILE, CSV_DELIMITER);
-            //MeetList = new ObservableCollection<Meeting>(_meetingRepository.GetAll().ToList());
+            _meetingRepository = new MeetingRepository(MEETING_FILE, CSV_DELIMITER);
+            MeetList = new ObservableCollection<Meeting>(_meetingRepository.GetAll().ToList());
 
-            //for(int i=0; i< MeetList.Count; i++)
-            //{
-            //    GRD.Items.Add(MeetList[i]);
-            //}
+            for (int i = 0; i < MeetList.Count; i++)
+            {
+                GRD.Items.Add(MeetList[i]);
+            }
 
         }
 
@@ -77,8 +77,14 @@ namespace bolnica.Pages
 
         }
 
+         private void Chart_Click(object sender, RoutedEventArgs e)
+        {
+            var page = new MeetingsChart(MeetList);
+            NavigationService.Navigate(page);
 
-        private void AddMeeting_Click(object sender, RoutedEventArgs e)
+        }
+
+    private void AddMeeting_Click(object sender, RoutedEventArgs e)
         {
             MeetingFile.Navigate(new NewMeeting());
         }

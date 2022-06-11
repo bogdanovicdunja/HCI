@@ -179,3 +179,7 @@ C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\LiveCharts.d
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\AppointmentChart.g.cs
 C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\AppointmentChart.baml
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\MeetingsChart.g.cs
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\MeetingsChart.baml
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\SurgeryChart.g.cs
+C:\Users\dunja\Desktop\HCI\bolnica\bolnica\obj\Debug\net6.0-windows\Pages\SurgeryChart.baml

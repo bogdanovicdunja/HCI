@@ -83,6 +83,12 @@ namespace bolnica.Pages
         private void DP1_SelectedDateChanged(object sender, RoutedEventArgs e)
         {
             ComboBoxItem cboitem = cboTP.SelectedItem as ComboBoxItem;
+            if(cboitem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Select a time first!");
+                d = DP1.Text;
+                return;
+            }
             if (cboitem.Content != null)
             {
                 t = cboitem.Content.ToString();
@@ -101,13 +107,29 @@ namespace bolnica.Pages
 
             //ComboBoxItem cboitem = cboTP.SelectedItem as ComboBoxItem;
             //_timeAppointment = cboitem.Content.ToString();
-
+            if(Patients.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Patient must be selected!");
+                return;
+            }
             Patient cboPatient = Patients.SelectedItem as Patient;
             _patientName = cboPatient.Name;
 
+
+            if (Doctors.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Doctor must be selected!");
+                return;
+            }
             Doctor cboDoctor = Doctors.SelectedItem as Doctor;
             _doctorName = cboDoctor.Name;
 
+
+            if (Rooms.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Room must be selected!");
+                return;
+            }
             Room cboRoom = Rooms.SelectedItem as Room;
             _roomName = cboRoom.Name;
 
@@ -115,9 +137,7 @@ namespace bolnica.Pages
             Appointment a = _appointmentRepository.AddAppointment(appointment);
 
 
-            //public Appointments(Appointment appointment);
-
-            //NewApp.Content = new Appointments();    //vodi na stranicu sa svim zakazanim pregledima
+           
             var page = new Appointments();
             NavigationService.Navigate(page);
         }

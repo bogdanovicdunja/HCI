@@ -40,6 +40,9 @@
     <Compile Update="Pages\Meetings.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\MeetingsChart.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\NewAppointment.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -56,6 +59,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\SecretaryHomepage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\SurgeryChart.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\test.xaml.cs">
@@ -108,6 +114,9 @@
     <Page Update="Pages\Meetings.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Pages\MeetingsChart.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\NewAppointment.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -124,6 +133,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\SecretaryHomepage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\SurgeryChart.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\test.xaml">

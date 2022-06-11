@@ -54,28 +54,67 @@ namespace bolnica.Pages
         }
 
         private void DP1_SelectedDateChanged(object sender, RoutedEventArgs e)
-        {         
-                d = DP1.Text;
-                //dt = DateTime.Parse(d);
+        {
+            //d = DP1.Text;
+            //dt = DateTime.Parse(d);
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            _birthDate = d;
+            _birthDate = DP1.Text;
+            if (_birthDate == "")
+            {
+                MessageBoxResult result = MessageBox.Show("DOB can't be empty!");
+                return;
+            }
+
             _patientName = PatientName.Text;
+            if (_patientName == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Name can't be empty!");
+                return;
+            }
+
             _patientSurname = PatientSurname.Text;
+            if (_patientSurname == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Surname can't be empty!");
+                return;
+            }
+
             _patientUsername = PatientUsername.Text;
+            if (_patientUsername == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Username can't be empty!");
+                return;
+            }
+            if (_patientRepository.FindPatientByUsername(_patientUsername) != null)
+            {
+            
+                MessageBoxResult result = MessageBox.Show("Username " + _patientUsername + " already exists!");
+            }
+
             _patientAdress = PatientAdress.Text;
+            if (_patientAdress == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Address can't be empty!");
+                return;
+            }
+
             _patientEmail = PatientEmail.Text;
+            if (_patientEmail == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Email can't be empty!");
+                return;
+            }
+
 
             Patient patient = new Patient(_patientName, _patientSurname, _birthDate, _patientUsername, _patientAdress, _patientEmail);
-            //MessageBoxResult result = MessageBox.Show(_patientName);
             Patient p = _patientRepository.AddPatient(patient);
 
 
             var page = new AllPatients();
             NavigationService.Navigate(page);
-            //NewAccount.Content = new AllPatients();
 
 
         }

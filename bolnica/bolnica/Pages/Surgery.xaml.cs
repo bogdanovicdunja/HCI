@@ -78,5 +78,11 @@ namespace bolnica.Pages
             SurFrame.Navigate(new UpdateSurgery(sur));
         }
 
+        private void Chart_Click(object sender, RoutedEventArgs e)
+        {
+            var page = new SurgeryChart(SurList);
+            NavigationService.Navigate(page);
+        }
+
     }
 }

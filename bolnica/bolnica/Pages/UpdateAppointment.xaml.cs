@@ -99,13 +99,29 @@ namespace bolnica.Pages
 
             //ComboBoxItem cboitem = cboTP.SelectedItem as ComboBoxItem;
             //_timeAppointment = cboitem.Content.ToString();
-
+            if (Patients.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Patient must be selected!");
+                return;
+            }
             Patient cboPatient = Patients.SelectedItem as Patient;
             _patientName = cboPatient.Name;
 
+
+            if (Doctors.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Doctor must be selected!");
+                return;
+            }
             Doctor cboDoctor = Doctors.SelectedItem as Doctor;
             _doctorName = cboDoctor.Name;
 
+
+            if (Rooms.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Room must be selected!");
+                return;
+            }
             Room cboRoom = Rooms.SelectedItem as Room;
             _roomName = cboRoom.Name;
 

@@ -115,10 +115,22 @@ namespace bolnica.Pages
         {
             _startMeeting = dt;
 
+
+            if (Rooms.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Room must be selected!");
+                return;
+            }
             Room cboRoom = Rooms.SelectedItem as Room;
             _roomName = cboRoom.Name;
 
+
             _topic = Topics.Text;
+            if (_topic == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Topic can't be empty!");
+                return;
+            }
 
             tempMeeting.Date = dt;
             tempMeeting.RoomName = _roomName;
