@@ -38,6 +38,7 @@ namespace bolnica.Pages
         public string t;
         public string d;
         DateTime dt;
+        DateTime test;
 
         private PatientRepository _patientRepository;
         private DoctorRepository _doctorRepository;
@@ -103,7 +104,7 @@ namespace bolnica.Pages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //d = DP1.Text;
-            _startAppointment = dt;
+            //_startAppointment = dt;
 
             //ComboBoxItem cboitem = cboTP.SelectedItem as ComboBoxItem;
             //_timeAppointment = cboitem.Content.ToString();
@@ -133,7 +134,13 @@ namespace bolnica.Pages
             Room cboRoom = Rooms.SelectedItem as Room;
             _roomName = cboRoom.Name;
 
-            Appointment appointment = new Appointment(_startAppointment, _patientName, _doctorName, _roomName);
+            //DateTime.TryParse("01/01/2001 12:00:00 AM", out DateTime datee);
+            if (dt == test ){
+                MessageBoxResult z = MessageBox.Show("select a date");
+                return;
+            }
+
+            Appointment appointment = new Appointment(dt, _patientName, _doctorName, _roomName);
             Appointment a = _appointmentRepository.AddAppointment(appointment);
 
 

@@ -15,6 +15,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using System.Net.Mail;
+using System.Text.RegularExpressions;
+
 namespace bolnica.Pages
 {
     /// <summary>
@@ -107,6 +110,17 @@ namespace bolnica.Pages
                 MessageBoxResult result = MessageBox.Show("Email can't be empty!");
                 return;
             }
+            if (IsValid(_patientEmail))
+            {
+                MessageBoxResult result = MessageBox.Show("Valid e-mail");
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show("INVALID e-mail");
+                return;
+            }
+
+
 
 
             Patient patient = new Patient(_patientName, _patientSurname, _birthDate, _patientUsername, _patientAdress, _patientEmail);
@@ -117,6 +131,26 @@ namespace bolnica.Pages
             NavigationService.Navigate(page);
 
 
+        }
+
+        private static bool IsValid(string email)
+        {
+        //    var valid = true;
+
+        //    try
+        //    {
+        //        var emailAddress = new MailAddress(email);
+        //    }
+        //    catch
+        //    {
+        //        valid = false;
+        //    }
+
+        //    return valid;
+
+            string regex = @"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$";
+
+            return Regex.IsMatch(email, regex, RegexOptions.IgnoreCase);
         }
     }
 }

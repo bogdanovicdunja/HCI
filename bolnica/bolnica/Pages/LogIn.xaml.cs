@@ -19,6 +19,8 @@ namespace bolnica.Pages
     /// </summary>
     public partial class LogIn : Window
     {
+        private string _username;
+        private string _password;
         public LogIn()
         {
             InitializeComponent();
@@ -29,7 +31,21 @@ namespace bolnica.Pages
 
         private void Confirm_Click(object sender, RoutedEventArgs e)
         {
-      
+            _username = User.Text;
+            if (_username == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Username can't be empty!");
+                return;
+            }
+
+
+            _password = Pass.Text;
+            if (_password == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Password can't be empty!");
+                return;
+            }
+
             Window window = new SecretaryHomepage();
             window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             //window.Height = 700;

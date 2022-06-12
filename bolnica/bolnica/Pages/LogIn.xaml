@@ -78,12 +78,12 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <TextBox HorizontalAlignment="Left" Margin="291,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="195" Height="30" Visibility="Visible">
+        <TextBox x:Name="User" HorizontalAlignment="Left" Margin="291,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="195" Height="30" Visibility="Visible">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox HorizontalAlignment="Left" Margin="291,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="195" Height="30" Visibility="Visible">
+        <TextBox x:Name="Pass" HorizontalAlignment="Left" Margin="291,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="195" Height="30" Visibility="Visible">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
