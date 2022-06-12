@@ -55,7 +55,9 @@ namespace bolnica.Pages
 
         private void AddAllergens_Click(object sender, RoutedEventArgs e)
         {
-            
+            var page = new NewAllergen();
+            NavigationService.Navigate(page);
+
         }
 
         private void DeleteAllergens_Click(object sender, RoutedEventArgs e)
