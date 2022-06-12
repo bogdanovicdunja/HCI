@@ -7,3 +7,4 @@
 7;Bandages;17
 8;Syringe and needle;23
 9;Bandages;18
+10;Syringe and needle;15

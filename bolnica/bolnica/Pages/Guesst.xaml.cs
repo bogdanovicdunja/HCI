@@ -40,13 +40,8 @@ namespace bolnica.Pages
 
         private void CreateButton(object sender, RoutedEventArgs e)
         {
-            //GuesstAcc.Content = new Emergency();
 
-            DateTime dt = DateTime.Now;
-            //DateTime datumrodjenja = DateTime.ParseExact(dt, "ddMMyyyy",
-            //                      CultureInfo.InvariantCulture);
-            
-
+            DateTime dt = DateTime.Now;                     
             string date_of_birth = dt.ToString("dd-MM-yyyy");
             string Username = User.Text;
             string Name = "N";
@@ -58,14 +53,17 @@ namespace bolnica.Pages
             {
                  Patient p = new Patient(Name, Surname, date_of_birth, Username, Adress, Email);
                 _patientRepository.AddPatient(p);
+
+                var page = new Emergency();
+                NavigationService.Navigate(page);
             }
             else
             {
                 MessageBoxResult result = MessageBox.Show("Username " + Username + " already exists!");
             }
 
-            var page = new Emergency();
-            NavigationService.Navigate(page);
+            //var page = new Emergency();
+            //NavigationService.Navigate(page);
 
         }
 

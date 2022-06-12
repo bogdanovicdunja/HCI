@@ -86,7 +86,7 @@
             </Button.Effect>
         </Button>
 
-        <Button Style="{DynamicResource RoundenButtonStyle}" Command="{Binding AddMeetingCommand}" Width="96" Height="30" Content="Show Chart" FontWeight="Bold" Margin="10, 0, 100, 300" HorizontalAlignment="Right" VerticalAlignment="Center" Click="Chart_Click">
+        <Button Style="{DynamicResource RoundenButtonStyle}" Command="{Binding AddMeetingCommand}" Width="96" Height="30" Content="Show Chart" FontWeight="Bold" Margin="10, 0, 630, 205" HorizontalAlignment="Right" VerticalAlignment="Center" Click="Chart_Click">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>

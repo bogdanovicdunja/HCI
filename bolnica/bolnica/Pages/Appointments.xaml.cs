@@ -68,7 +68,9 @@ namespace bolnica.Pages
         }
         private void AddAppointment_Click(object sender, RoutedEventArgs e)
         {
-            AppFrame.Navigate(new NewAppointment());
+            //AppFrame.Navigate(new NewAppointment());
+            var page = new NewAppointment();
+            NavigationService.Navigate(page);
         }
 
         private void DeleteAppointment_Click(object sender, RoutedEventArgs e)

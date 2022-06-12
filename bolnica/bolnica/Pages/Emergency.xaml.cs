@@ -79,26 +79,34 @@ namespace bolnica.Pages
 
         private void Schedule_Click(object sender, RoutedEventArgs e)
         {
-            //EmergencyCase.Navigate(new Guesst());
 
+
+            if (Patients.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Patient must be selected!");
+                return;
+            }
+            Patient cboPatient = Patients.SelectedItem as Patient;
+            _patientName = cboPatient.Username;
+
+
+            if (Spec.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Specialization must be selected!");
+                return;
+            }
             ComboBoxItem cboSpec = Spec.SelectedItem as ComboBoxItem;
             _docSpec = cboSpec.Content.ToString();
 
 
+            if (App.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Appointment, that will be moved, must be selected!");
+                return;
+            }
             Appointment cboAppointment = App.SelectedItem as Appointment;
             _startAppointment = cboAppointment.Start;
 
-            //ComboBoxItem cboitem = cboTP.SelectedItem as ComboBoxItem;
-            //_timeAppointment = cboitem.Content.ToString();
-
-            Patient cboPatient = Patients.SelectedItem as Patient;
-            _patientName = cboPatient.Username;
-
-            //Doctor cboDoctor = Doctors.SelectedItem as Doctor;
-            //_doctorName = cboDoctor.Name;
-
-            //Room cboRoom = Rooms.SelectedItem as Room;
-            //_roomName = cboRoom.Name;
 
             Appointment appointment = new Appointment(_startAppointment, _patientName, "Zoran", "soba 707");
             Appointment a = _appointmentRepository.AddAppointment(appointment);

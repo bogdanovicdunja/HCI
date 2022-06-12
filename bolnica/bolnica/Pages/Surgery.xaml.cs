@@ -51,7 +51,9 @@ namespace bolnica.Pages
 
         private void AddSurgery_Click(object sender, RoutedEventArgs e)
         {
-            SurFrame.Navigate(new NewSurgery());
+            //SurFrame.Navigate(new NewSurgery());
+            var page = new NewSurgery();
+            NavigationService.Navigate(page);
         }
 
 

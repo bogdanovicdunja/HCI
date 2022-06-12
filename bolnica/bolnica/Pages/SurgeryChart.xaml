@@ -11,7 +11,7 @@
 
     <Grid Background="White">
         <lvc:PieChart Name="Chart" Grid.Row="1" Series="{Binding SeriesCollection}" 
-                      LegendLocation="Right"  InnerRadius="0" Margin="0 15">
+                      LegendLocation="Right"  InnerRadius="0" Margin="84,45,26,45">
             <lvc:PieChart.ChartLegend>
                 <lvc:DefaultLegend BulletSize="20"></lvc:DefaultLegend>
             </lvc:PieChart.ChartLegend>
@@ -19,5 +19,10 @@
                 <lvc:DefaultTooltip BulletSize="20"></lvc:DefaultTooltip>
             </lvc:PieChart.DataTooltip>
         </lvc:PieChart>
+        <Label Content="Most scheduled doctors" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" FontWeight="Medium" FontSize="16" FontStyle="Italic">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
     </Grid>
 </Page>
