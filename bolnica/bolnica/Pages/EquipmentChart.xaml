@@ -10,19 +10,19 @@
       Title="EquipmentChart"
      >
 
-    <Grid Background="White">
+    <Grid Background="White" >
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Orientation="Horizontal">
+        <!--<StackPanel Grid.Row="0" Orientation="Horizontal">
             <TextBlock VerticalAlignment="Center" Margin="10 0">Search</TextBlock>
             <TextBox Name="Query" VerticalContentAlignment="Center" Width="100" Height="30" 
                      TextChanged="TextBoxBase_OnTextChanged"></TextBox>
-        </StackPanel>
-        <lvc:CartesianChart Grid.Row="1" >
+        </StackPanel>-->
+        <lvc:CartesianChart Grid.Row="1" Margin="0, 45, 0, 0">
             <lvc:CartesianChart.Series>
-                <lvc:ColumnSeries Title="2016 Population by City" 
+                <lvc:ColumnSeries Title="Quantity: " 
                                   Values="{Binding Results}"
                                   Configuration="{Binding Mapper}"/>
             </lvc:CartesianChart.Series>
@@ -37,5 +37,10 @@
                 <lvc:Axis LabelFormatter="{Binding MillionFormatter}"></lvc:Axis>
             </lvc:CartesianChart.AxisY>
         </lvc:CartesianChart>
+        <Label Content="Most ordered equipment" HorizontalAlignment="Center" Margin="200,0,200,0" Grid.Row="1" VerticalAlignment="Top" FontStyle="Italic" FontSize="16" FontWeight="Medium">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
     </Grid>
 </Page>

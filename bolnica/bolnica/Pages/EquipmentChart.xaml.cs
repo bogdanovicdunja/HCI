@@ -70,26 +70,26 @@ namespace bolnica.Pages
 
             
 
-            private void TextBoxBase_OnTextChanged(object sender, TextChangedEventArgs e)
-            {
-                var q = (Query.Text ?? string.Empty).ToUpper();
+            //private void TextBoxBase_OnTextChanged(object sender, TextChangedEventArgs e)
+            //{
+            //    var q = (Query.Text ?? string.Empty).ToUpper();
 
-            //var records = DataBase.Cities
-            //    .Where(x => x.Name.ToUpper().Contains(q) || x.Country.ToUpper().Contains(q))
-            //    .OrderByDescending(x => x.Population)
-            //    .Take(15)
-            //    .ToArray();
+            ////var records = DataBase.Cities
+            ////    .Where(x => x.Name.ToUpper().Contains(q) || x.Country.ToUpper().Contains(q))
+            ////    .OrderByDescending(x => x.Population)
+            ////    .Take(15)
+            ////    .ToArray();
 
-                //OrderList = temp;
-                var records = OrderList;
+            //    //OrderList = temp;
+            //    var records = OrderList;
 
-                Results.Clear();
-                Results.AddRange(records);
+            //    Results.Clear();
+            //    Results.AddRange(records);
 
-                Labels.Clear();
-                foreach (var record in records) Labels.Add(record.Name);
+            //    Labels.Clear();
+            //    foreach (var record in records) Labels.Add(record.Name);
 
-            }
+            //}
 
 
         public List<string> getNames(ObservableCollection<Model.Equipment> Equipments)
@@ -151,21 +151,9 @@ namespace bolnica.Pages
 
         public List<Model.Equipment> fillEquipment(List<Model.Equipment> equipments, ObservableCollection<Model.Equipment> Equipments)
         {
-            //for(int i=0; i< Equipments.Count; i++)
-            //{
-            //    for(int j=0; j<equipments.Count; j++)
-            //    {
-            //        if(Equipments[i].Name == equipments[j].Name)
-            //        {
-            //            equipments[j].Quantity += Equipments[i].Quantity;
-            //        }
-            //    }
-            //}
-
-            //return equipments;
-            List<Model.Equipment> retVal;
             
-          
+            List<Model.Equipment> retVal;
+                      
 
             for(int i=0; i<equipments.Count; i++)
             {
