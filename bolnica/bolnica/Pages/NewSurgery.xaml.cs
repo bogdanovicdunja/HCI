@@ -156,7 +156,7 @@ namespace bolnica.Pages
                 string naslov = "Hospital Health";
                 
                 graphics.DrawString(naslov, font, PdfBrushes.Black, new PointF(200, 0));
-                string textPDF = "Report abaout room occupation for 25/5/2022 - 25/6/2022 : ";
+                string textPDF = "Report abaout room occupation for date you chose: ";
                 graphics.DrawString(textPDF, font1, PdfBrushes.Black, new PointF(80, 75));
                 PdfLightTable pdfLightTable = new PdfLightTable();
                 DataTable table = new DataTable();
