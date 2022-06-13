@@ -34,8 +34,8 @@ namespace bolnica.Pages
         private string _doctorName;
         private string _roomName;
 
-        public string t;
-        public string d;
+        public string t = "";
+        public string d = "";
         DateTime dt;
         DateTime test;
 
@@ -81,39 +81,41 @@ namespace bolnica.Pages
 
 
         private void DP1_SelectedDateChanged(object sender, RoutedEventArgs e)
+        {          
+                d = DP1.Text;
+        }
+
+        private void cboTP_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ComboBoxItem cboitem = cboTP.SelectedItem as ComboBoxItem;
-            if(cboitem == null)
-            {
-                MessageBoxResult result = MessageBox.Show("Select a time first!");
-                d = DP1.Text;
-                return;
-            }
-            if (cboitem.Content != null)
-            {
-                t = cboitem.Content.ToString();
-                d = DP1.Text;
-
-                dt = DateTime.Parse(d + " " + t);
-            }
-
+            t = cboitem.Content.ToString();
         }
 
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //d = DP1.Text;
-            //_startAppointment = dt;
-
-            //ComboBoxItem cboitem = cboTP.SelectedItem as ComboBoxItem;
-            //_timeAppointment = cboitem.Content.ToString();
             
+            if (d == "")
+            {
+                MessageBoxResult sz = MessageBox.Show("select a date");
+                return;
+            }
 
-            //DateTime.TryParse("01/01/2001 12:00:00 AM", out DateTime datee);
-            if (dt == test ){
+            if (t == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Select a time");
+                return;
+            }
+
+
+            dt = DateTime.Parse(d + " " + t);
+
+            if (dt == test)
+            {
                 MessageBoxResult z = MessageBox.Show("select a date");
                 return;
             }
+
 
 
 
@@ -125,7 +127,7 @@ namespace bolnica.Pages
             Room cboRoom = Rooms.SelectedItem as Room;
             _roomName = cboRoom.Name;
 
-
+           
 
             if (Patients.SelectedItem == null)
             {
@@ -221,8 +223,9 @@ namespace bolnica.Pages
             }
         }
 
+        //private void cboTP_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
 
-
-
+        //}
     }
 }

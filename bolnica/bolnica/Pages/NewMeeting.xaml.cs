@@ -32,11 +32,12 @@ namespace bolnica.Pages
         private string _roomName;
         private string _topic;
 
-        public string t;
-        public string d;
+        public string t = "";
+        public string d = "";
         DateTime dt;
+        DateTime test;
 
-        
+
         private RoomRepository _roomRepository;
         private MeetingRepository _meetingRepository;
 
@@ -66,20 +67,46 @@ namespace bolnica.Pages
 
         private void DP1_SelectedDateChanged(object sender, RoutedEventArgs e)
         {
-            ComboBoxItem cboitem = cboTP.SelectedItem as ComboBoxItem;
-            if (cboitem.Content != null)
-            {
-                t = cboitem.Content.ToString();
+           
                 d = DP1.Text;
-
-                dt = DateTime.Parse(d + " " + t);
-            }
 
         }
 
+        private void cboTP_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBoxItem cboitem = cboTP.SelectedItem as ComboBoxItem;
+            t = cboitem.Content.ToString();
+        }
+
+
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            _startMeeting = dt;//******************************* VALIDACIJA ZA VREME I DATUM
+            //_startMeeting = dt;//******************************* VALIDACIJA ZA VREME I DATUM
+
+            if (d == "")
+            {
+                MessageBoxResult sz = MessageBox.Show("select a date");
+                return;
+            }
+
+            if (t == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Select a time");
+                return;
+            }
+
+
+            dt = DateTime.Parse(d + " " + t);
+
+            if (dt == test)
+            {
+                MessageBoxResult z = MessageBox.Show("select a date");
+                return;
+            }
+
+
+
 
             if (Rooms.SelectedItem == null)
             {
@@ -98,7 +125,7 @@ namespace bolnica.Pages
                 return;
             }
 
-            Meeting meeting = new Meeting(_startMeeting, _roomName, _topic);
+            Meeting meeting = new Meeting(dt, _roomName, _topic);
             Meeting m = _meetingRepository.AddMeeting(meeting);
 
 

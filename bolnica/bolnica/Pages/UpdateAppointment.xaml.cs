@@ -33,9 +33,10 @@ namespace bolnica.Pages
         private string _doctorName;
         private string _roomName;
 
-        public string t;
-        public string d;
+        public string t = "";
+        public string d = "";
         DateTime dt;
+        DateTime test;
 
         private PatientRepository _patientRepository;
         private DoctorRepository _doctorRepository;
@@ -79,22 +80,43 @@ namespace bolnica.Pages
 
         private void DP1_SelectedDateChanged(object sender, RoutedEventArgs e)
         {
+            d = DP1.Text;
+
+        }
+
+        private void cboTP_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
             ComboBoxItem cboitem = cboTP.SelectedItem as ComboBoxItem;
-            if (cboitem.Content != null)
-            {
-                t = cboitem.Content.ToString();
-                d = DP1.Text;
-
-                dt = DateTime.Parse(d + " " + t);
-            }
-
+            t = cboitem.Content.ToString();
         }
 
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-            _startAppointment = dt;     /// VALIDACIJA ZA VREME ***********
+
+            //_startAppointment = dt;     /// VALIDACIJA ZA VREME ***********
+            if (d == "")
+            {
+                MessageBoxResult sz = MessageBox.Show("select a date");
+                return;
+            }
+
+            if (t == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Select a time");
+                return;
+            }
+
+
+            dt = DateTime.Parse(d + " " + t);
+
+            if (dt == test)
+            {
+                MessageBoxResult z = MessageBox.Show("select a date");
+                return;
+            }
+
+
 
 
             if (Rooms.SelectedItem == null)
@@ -129,7 +151,7 @@ namespace bolnica.Pages
             tempAppointment.PatientName = _patientName;
             tempAppointment.DoctorName = _doctorName;
             tempAppointment.RoomName = _roomName;
-            tempAppointment.Start = _startAppointment;
+            tempAppointment.Start = dt;
             Appointment a = _appointmentRepository.UpdateAppointment(tempAppointment);
 
 
