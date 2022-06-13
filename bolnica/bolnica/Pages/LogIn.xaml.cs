@@ -39,7 +39,7 @@ namespace bolnica.Pages
             }
 
 
-            _password = Pass.Text;
+            _password = Pass.Password;
             if (_password == "")
             {
                 MessageBoxResult result = MessageBox.Show("Password can't be empty!");

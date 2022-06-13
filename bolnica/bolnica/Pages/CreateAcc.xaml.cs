@@ -26,8 +26,6 @@ namespace bolnica.Pages
     public partial class CreateAcc : Page
     {
 
-        //private DateTime _birthDate;
-        // private string _timeAppointment;
         private string _birthDate;
         private string _patientName;
         private string _patientSurname;
@@ -64,12 +62,7 @@ namespace bolnica.Pages
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            _birthDate = DP1.Text;
-            if (_birthDate == "")
-            {
-                MessageBoxResult result = MessageBox.Show("DOB can't be empty!");
-                return;
-            }
+           
 
             _patientName = PatientName.Text;
             if (_patientName == "")
@@ -85,6 +78,22 @@ namespace bolnica.Pages
                 return;
             }
 
+            _birthDate = DP1.Text;
+            if (_birthDate == "")
+            {
+                MessageBoxResult result = MessageBox.Show("DOB can't be empty!");
+                return;
+            }
+
+
+            _patientAdress = PatientAdress.Text;
+            if (_patientAdress == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Address can't be empty!");
+                return;
+            }
+
+
             _patientUsername = PatientUsername.Text;
             if (_patientUsername == "")
             {
@@ -97,12 +106,7 @@ namespace bolnica.Pages
                 MessageBoxResult result = MessageBox.Show("Username " + _patientUsername + " already exists!");
             }
 
-            _patientAdress = PatientAdress.Text;
-            if (_patientAdress == "")
-            {
-                MessageBoxResult result = MessageBox.Show("Address can't be empty!");
-                return;
-            }
+           
 
             _patientEmail = PatientEmail.Text;
             if (_patientEmail == "")

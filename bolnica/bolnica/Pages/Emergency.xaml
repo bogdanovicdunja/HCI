@@ -83,11 +83,7 @@
         </Label>
         
         
-        <!--<DatePicker HorizontalAlignment="Center" Margin="0,221,0,0" VerticalAlignment="Top" Width="196" Height="25">
-            <DatePicker.Effect>
-                <DropShadowEffect/>
-            </DatePicker.Effect>
-        </DatePicker>-->
+       
       
         <Label Content="Patient:" Foreground="White" HorizontalAlignment="Left" Margin="30,113,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
@@ -104,11 +100,7 @@
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <!--<Label Content="Date:" Foreground="White" HorizontalAlignment="Left" Margin="30,219,0,0" VerticalAlignment="Top" FontWeight="Bold">
-            <Label.Effect>
-                <DropShadowEffect/>
-            </Label.Effect>
-        </Label-->
+       
         <ComboBox x:Name="Patients" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Width="196" Height="25">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
@@ -127,11 +119,7 @@
             <ComboBoxItem Content="Oftalmology"/>
             <ComboBoxItem Content="Dermatology"/>
             <ComboBoxItem Content="Urology"/>
-            <!--<ComboBoxItem Content="Radiography"/>
-            <ComboBoxItem Content="Reflex hammer"/>
-            <ComboBoxItem Content="Defibrillator"/>
-            <ComboBoxItem Content="Dyalizer"/>
-            <ComboBoxItem Content="Syringe and needle"/>-->
+           
             
             <ComboBox.ItemTemplate>
                 <DataTemplate>

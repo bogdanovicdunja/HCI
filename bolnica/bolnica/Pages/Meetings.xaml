@@ -74,9 +74,7 @@
     <Grid>
 
         <Label Content="Scheduled Meetings" HorizontalAlignment="Center" Margin="0,46,0,0" VerticalAlignment="Top" Width="400" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Medium" VerticalContentAlignment="Center" FontStyle="Italic" Height="50">
-            <!--<Label.Effect>
-                <DropShadowEffect/>
-            </Label.Effect>-->
+         
         </Label>
         
         

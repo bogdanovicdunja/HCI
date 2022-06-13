@@ -86,7 +86,7 @@ namespace bolnica.Pages
 
     private void AddMeeting_Click(object sender, RoutedEventArgs e)
         {
-            //MeetingFile.Navigate(new NewMeeting());
+            
             var page = new NewMeeting();
             NavigationService.Navigate(page);
         }

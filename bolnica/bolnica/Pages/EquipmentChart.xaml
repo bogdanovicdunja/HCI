@@ -15,11 +15,7 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <!--<StackPanel Grid.Row="0" Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" Margin="10 0">Search</TextBlock>
-            <TextBox Name="Query" VerticalContentAlignment="Center" Width="100" Height="30" 
-                     TextChanged="TextBoxBase_OnTextChanged"></TextBox>
-        </StackPanel>-->
+        
         <lvc:CartesianChart Grid.Row="1" Margin="0, 45, 0, 0">
             <lvc:CartesianChart.Series>
                 <lvc:ColumnSeries Title="Quantity: " 

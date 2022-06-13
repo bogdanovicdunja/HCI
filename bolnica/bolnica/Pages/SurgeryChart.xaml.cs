@@ -36,11 +36,10 @@ namespace bolnica.Pages
             SurList = temp;
             Names = getNames(SurList);
             dict = fillDictionary(Names, SurList);
-            // AppList = temp;
+            
             SeriesCollection = new SeriesCollection
             {
-                //for (int i = 0; i < AppList.Count; i++)
-                //{
+               
                 new PieSeries
                 {
                     Title = Names[0],
@@ -72,13 +71,7 @@ namespace bolnica.Pages
                     DataLabels = true
 
                 }
-                //,  new PieSeries
-                //{
-                //    Title = Names[5],
-                //    Values = new ChartValues<ObservableValue> { new ObservableValue(dict[Names[5]]) },
-                //    DataLabels = true
-
-                //}
+               
                     
                
             };

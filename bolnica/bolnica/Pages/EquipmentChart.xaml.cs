@@ -42,17 +42,13 @@ namespace bolnica.Pages
             
             InitializeComponent();
             OrderList = temp;
-            //Names = getNames(OrderList);
+           
             EquipmentList = getEquipmentNames(OrderList);
-            //dict = fillDictionary(Names, OrderList);
+            
             OrderList = temp;
             EquipmentList = fillEquipment(EquipmentList, OrderList);
 
-            //lets configure the chart to plot cities
-         
-
-            //lets take the first 15 records by default;
-            //var records = OrderList.Equ.OrderByDescending(x => x.Quantity).Take(15).ToArray();
+           
             var records = EquipmentList;
 
             Mapper = Mappers.Xy<Model.Equipment>()
@@ -62,50 +58,12 @@ namespace bolnica.Pages
             Results = records.AsChartValues();
             Labels = new ObservableCollection<string>(records.Select(x => x.Name));
 
-            // MillionFormatter = value => (value / 1).ToString("N") + "M";
+            
 
             DataContext = this;
         }
 
 
-            
-
-            //private void TextBoxBase_OnTextChanged(object sender, TextChangedEventArgs e)
-            //{
-            //    var q = (Query.Text ?? string.Empty).ToUpper();
-
-            ////var records = DataBase.Cities
-            ////    .Where(x => x.Name.ToUpper().Contains(q) || x.Country.ToUpper().Contains(q))
-            ////    .OrderByDescending(x => x.Population)
-            ////    .Take(15)
-            ////    .ToArray();
-
-            //    //OrderList = temp;
-            //    var records = OrderList;
-
-            //    Results.Clear();
-            //    Results.AddRange(records);
-
-            //    Labels.Clear();
-            //    foreach (var record in records) Labels.Add(record.Name);
-
-            //}
-
-
-        public List<string> getNames(ObservableCollection<Model.Equipment> Equipments)
-        {
-            List<string> list = new List<string>();
-            for (int i = 0; i < Equipments.Count; i++)
-            {
-                string name = Equipments[i].Name;
-                if (!list.Contains(name))
-                {
-                    list.Add(name);
-                }
-            }
-
-            return list;
-        }
 
         public List<Model.Equipment> getEquipmentNames(ObservableCollection<Model.Equipment> Equipments)
         {
@@ -124,30 +82,15 @@ namespace bolnica.Pages
                 }
                 if (flag == 0)
                 {
-                    //Equipments[i].Quantity = 0;
+                    
                     list.Add(Equipments[i]);
                 }
-            }
-
-
-            //MessageBoxResult result = MessageBox.Show(list.Count.ToString());
+            }         
 
             return list;
         }
 
-        public Dictionary<string, int> fillDictionary(List<string> names, ObservableCollection<Model.Equipment> Equipments)
-        {
-            Dictionary<string, int> dict = new Dictionary<string, int>();
-            for (int i = 0; i < names.Count; i++)
-            {
-                dict[names[i]] = 0;
-            }
-            for (int i = 0; i < Equipments.Count; i++)
-            {
-                dict[Equipments[i].Name]+= Equipments[i].Quantity;
-            }
-            return dict;
-        }
+       
 
         public List<Model.Equipment> fillEquipment(List<Model.Equipment> equipments, ObservableCollection<Model.Equipment> Equipments)
         {

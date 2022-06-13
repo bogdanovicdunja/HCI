@@ -73,7 +73,7 @@ namespace bolnica.Pages
             Model.Equipment eq = _equipmentRepository.AddEquipment(equipment);
 
 
-            //NewMeet.Content = new Meetings();
+          
             var page = new Equipment();
             NavigationService.Navigate(page);
         }

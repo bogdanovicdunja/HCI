@@ -9,3 +9,6 @@
 9;Bandages;18
 10;Syringe and needle;15
 11;Defibrillator;11
+12;Dyalizer;6
+13;Reflex hammer;33
+14;Reflex hammer;4

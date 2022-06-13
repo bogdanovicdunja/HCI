@@ -83,11 +83,11 @@
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox x:Name="Pass" HorizontalAlignment="Left" Margin="291,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="195" Height="30" Visibility="Visible">
-            <TextBox.Effect>
+        <PasswordBox x:Name="Pass" HorizontalAlignment="Left" Margin="291,216,0,0" VerticalAlignment="Top" Width="195" Height="30" Visibility="Visible">
+            <PasswordBox.Effect>
                 <DropShadowEffect/>
-            </TextBox.Effect>
-        </TextBox>
+            </PasswordBox.Effect>
+        </PasswordBox>
         <Button Content="Confirm" HorizontalAlignment="Left" Margin="340,282,0,0" VerticalAlignment="Top"  Height="44" Width="113" FontWeight="Bold" Click="Confirm_Click" Background="#FFA0AEC2" Style="{DynamicResource RoundenButtonStyle}">
             <Button.Effect>
                 <DropShadowEffect/>

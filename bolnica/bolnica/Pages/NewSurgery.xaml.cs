@@ -90,7 +90,18 @@ namespace bolnica.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            _startAppointment = dt;
+            _startAppointment = dt; //**************************************** DATUM VALIDACIJA
+
+
+            if (Rooms.SelectedItem == null)
+            {
+                MessageBoxResult result = MessageBox.Show("Room must be selected!");
+                return;
+            }
+            Room cboRoom = Rooms.SelectedItem as Room;
+            _roomName = cboRoom.Name;
+
+
 
             if (Patients.SelectedItem == null)
             {
@@ -99,6 +110,8 @@ namespace bolnica.Pages
             }
             Patient cboPatient = Patients.SelectedItem as Patient;
             _patientName = cboPatient.Name;
+
+
 
 
             if (Doctors.SelectedItem == null)
@@ -110,18 +123,12 @@ namespace bolnica.Pages
             _doctorName = cboDoctor.Name;
 
 
-            if (Rooms.SelectedItem == null)
-            {
-                MessageBoxResult result = MessageBox.Show("Room must be selected!");
-                return;
-            }
-            Room cboRoom = Rooms.SelectedItem as Room;
-            _roomName = cboRoom.Name;
+            
 
             Appointment appointment = new Appointment(_startAppointment, _patientName, _doctorName, _roomName);
             Appointment a = _appointmentRepository.AddAppointment(appointment);
 
-            //NewSur.Content = new Surgery();
+        
             var page = new Surgery();
             NavigationService.Navigate(page);
         }
@@ -147,14 +154,13 @@ namespace bolnica.Pages
                 PdfFont font = new PdfStandardFont(PdfFontFamily.Helvetica, 20);
                 PdfFont font1 = new PdfStandardFont(PdfFontFamily.Helvetica, 15);
                 string naslov = "Hospital Health";
-                //PdfImage image = PdfImage.FromFile(@"C:\Users\dunja\Desktop\HCI\bolnica\bolnica\images\heart.png");
-                //graphics.DrawImage(image, 165, 0);
+                
                 graphics.DrawString(naslov, font, PdfBrushes.Black, new PointF(200, 0));
                 string textPDF = "Report abaout room occupation for 25/5/2022 - 25/6/2022 : ";
                 graphics.DrawString(textPDF, font1, PdfBrushes.Black, new PointF(80, 75));
                 PdfLightTable pdfLightTable = new PdfLightTable();
                 DataTable table = new DataTable();
-                //table.Columns.Add("Date");
+               
                 table.Columns.Add("Room Name");
                 table.Columns.Add("Period");
                 table.Columns.Add("Doctor");
@@ -180,7 +186,7 @@ namespace bolnica.Pages
                 pdfLightTable.Style.ShowHeader = true;
                 pdfLightTable.Draw(page, new PointF(0, 100));
                 doc.Save(@"C:\Users\dunja\Desktop\HCI\bolnica\bolnica\Reports\RoomOccupation.pdf");
-                // doc.Save("RoomOccupation.pdf");
+               
                 doc.Close(true);
 
 

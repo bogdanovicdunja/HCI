@@ -87,22 +87,14 @@
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <!--<TextBox TextWrapping="Wrap" Opacity="1.0" Text="" HorizontalAlignment="Center" Margin="0,147,0,0" VerticalAlignment="Top" Width="195" Height="25">
-            <TextBox.Effect>
-                <DropShadowEffect/>
-            </TextBox.Effect>
-        </TextBox>-->
+       
         
         <Label Content="Username:" Opacity="1.0" Foreground="White" HorizontalAlignment="Left" Margin="30,110,0,0" VerticalAlignment="Top" FontWeight="Bold">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
         </Label>
-        <!--<Label Content="Password:"  Opacity="1.0" Foreground="White" HorizontalAlignment="Left" Margin="30,147,0,0" VerticalAlignment="Top" FontWeight="Bold">
-            <Label.Effect>
-                <DropShadowEffect/>
-            </Label.Effect>
-        </Label>-->
+        
         <Button Style="{DynamicResource RoundenButtonStyle}" Opacity="1.0" Content="Create" HorizontalAlignment="Center" Margin="0,147,0,0" VerticalAlignment="Top" Height="30" Width="96" FontWeight="Bold" Click="CreateButton">
             <Button.Effect>
                 <DropShadowEffect/>

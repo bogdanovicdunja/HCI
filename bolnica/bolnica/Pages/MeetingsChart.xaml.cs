@@ -65,21 +65,8 @@ namespace bolnica.Pages
                     DataLabels = true
 
                 }
-                //,  new PieSeries
-                //{
-                //    Title = Names[4],
-                //    Values = new ChartValues<ObservableValue> { new ObservableValue(dict[Names[4]]) },
-                //    DataLabels = true
-
-                //},  new PieSeries
-                //{
-                //    Title = Names[5],
-                //    Values = new ChartValues<ObservableValue> { new ObservableValue(dict[Names[5]]) },
-                //    DataLabels = true
-
-                //}
-              
-              
+               
+                           
             };
 
             DataContext = this;

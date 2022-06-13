@@ -26,7 +26,6 @@ namespace bolnica.Pages
 
 
         private DateTime _startAppointment;
-        // private string _timeAppointment;
         private string _patientName;
         private string _doctorName;
         private string _roomName;
@@ -66,14 +65,12 @@ namespace bolnica.Pages
 
             PatientsList = new ObservableCollection<Patient>(_patientRepository.GetAll().ToList());
             AppList = new ObservableCollection<Appointment>(_appointmentRepository.GetAll().ToList());
-            //DoctorsList = new ObservableCollection<Doctor>(_doctorRepository.GetAll().ToList());
-            //RoomsList = new ObservableCollection<Room>(_roomRepository.GetAll().ToList());
+           
 
 
             Patients.ItemsSource = PatientsList;    //Patients - combobox sa frontenda
             App.ItemsSource = AppList;
-            //Doctors.ItemsSource = DoctorsList;
-            //Rooms.ItemsSource = RoomsList;
+           
 
         }
 
@@ -118,7 +115,7 @@ namespace bolnica.Pages
 
         private void Guesst_Click(object sender, RoutedEventArgs e)
         {
-            //EmergencyCase.Navigate(new Guesst());
+           
             var page = new Guesst();
             NavigationService.Navigate(page);
         }
