@@ -211,7 +211,7 @@ namespace bolnica.Pages
                 pdfLightTable.Style.ShowHeader = true;
                 pdfLightTable.Draw(page, new PointF(0, 100));
 
-                doc.Save(@"C:\Users\dunja\Desktop\HCI\bolnica\bolnica\Reports\report.pdf");
+                doc.Save(@"C:\Users\dunja\Desktop\HCI\bolnica\bolnica\Reports\RoomOccupation.pdf");
 
                 //string filename = @"C:\Users\dunja\Desktop\HCI\bolnica\bolnica\Reports\report.pdf";
                 //System.Diagnostics.Process.Start(filename);
@@ -223,9 +223,6 @@ namespace bolnica.Pages
             }
         }
 
-        //private void cboTP_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-
-        //}
+        
     }
 }
